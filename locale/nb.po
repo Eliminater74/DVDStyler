@@ -1,0 +1,3162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DVDStyler v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-23 20:30+0200\n"
+"PO-Revision-Date: 2015-01-28 09:45+0200\n"
+"Last-Translator: Olav Inge Frøynes <olavinge at gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/About.cpp:35
+msgid "About ..."
+msgstr "Om ..."
+
+#: src/About.cpp:39
+msgid "About"
+msgstr "Om"
+
+#: src/About.cpp:46
+msgid "Written by: "
+msgstr "Skrevet av: "
+
+#: src/About.cpp:48
+msgid "Version: "
+msgstr "Versjon: "
+
+#: src/About.cpp:50
+msgid "Licence type: "
+msgstr "Lisens type: "
+
+#: src/About.cpp:52
+msgid "Copyright: "
+msgstr "Kopirettigheter: "
+
+#: src/About.cpp:73
+msgid "DVDStyler is a crossplatform authoring system for Video DVD production."
+msgstr "DVDStyler er et fler-OS system for produksjon av DVD-filmer."
+
+#: src/About.cpp:85
+msgid "Forum"
+msgstr "Forum"
+
+#: src/About.cpp:86
+#, c-format
+msgid "Please use %sDVDStyler forum%s to get support, ask questions, or discuss this software."
+msgstr "Bruk %sDVDStyler forum%s for å få hjelp, stille spørsmål, eller diskutere dette programmet."
+
+#: src/About.cpp:88
+msgid "WIKI"
+msgstr "WIKI"
+
+#: src/About.cpp:89
+#, c-format
+msgid ""
+"Some documentation and %sFAQ%s you can find in %sDVDStyler WIKI%s or you can publish there your comments or "
+"small guides."
+msgstr ""
+"Du kan finne også dokumentasjon og %sFAQ%s i %sDVDStyler WIKI%s. Du kan også legge inn dine kommentarer og "
+"egne tips her."
+
+#: src/About.cpp:92
+msgid "Bugs & RFE"
+msgstr "Feilrapportering og forslag"
+
+#: src/About.cpp:93
+#, c-format
+msgid ""
+"Please use %sSourceforge Bugtracing system%s to report bug and %sSourceforge RFE system%s to submit a new "
+"feature request."
+msgstr ""
+"Bruk %sSourceforge Bugtracing system%s for feilrapportering og %sSourceforge RFE system%s for å legge inn "
+"nye forslag."
+
+#: src/About.cpp:98
+msgid "Support"
+msgstr "Støtte"
+
+#: src/About.cpp:106
+msgid "Author and Maintainer"
+msgstr "Opphavsmann og Vedlikeholder"
+
+#: src/About.cpp:111
+msgid "Doc Writer"
+msgstr "Dokumentasjon-forfatter"
+
+#: src/About.cpp:116
+msgid "Packager (.deb)"
+msgstr "Pakker (.deb)"
+
+#: src/About.cpp:121
+msgid "Translations"
+msgstr "Oversettinger"
+
+#: src/About.cpp:127
+msgid "Libraries and Tools"
+msgstr "Bibliotek og Verktøy"
+
+#: src/About.cpp:136
+msgid "Authors"
+msgstr "Opphavsmenn"
+
+#: src/About.cpp:143
+msgid ""
+"DVDStyler is <a href='http://www.gnu.org/philosophy/free-sw.html'>free software</a> distributed under <a "
+"href='http://www.gnu.org/copyleft/gpl.html'>GNU General Public License (GPL)</a>. Please visit those sites "
+"for details of each agreement."
+msgstr ""
+"DVDStyler er <a href='http://www.gnu.org/philosophy/free-sw.html'>fri programvare</a> utgitt under <a "
+"href='http://www.gnu.org/copyleft/gpl.html'>GNU General Public License (GPL)</a>. Besøk gjerne disse  "
+"sidene for mer detaljert informasjon. "
+
+#: src/About.cpp:148
+msgid ""
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT "
+"LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO "
+"EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER "
+"IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE "
+"USE OR OTHER DEALINGS IN THE SOFTWARE."
+msgstr ""
+"PROGRAMVAREN LEVERES \"SOM DEN ER\", UTEN NOEN SOM HELST GARANTI, UTTRYKT ELLER UNDERFORSTÅTT, INKLUDERT "
+"MEN IKKE BEGRENSET TIL GARANTIER OM SALGBARHET, EGNETHET FOR ET BESTEMT FORMÅL OG IKKE-MISBRUK. UNDER INGEN "
+"OMSTENDIGHETER SKAL FORFATTERNE ELLER RETTIGHETSHAVERNE SETTES TIL ANSVAR FOR NOEN KRAV, SKADER ELLER ANDRE "
+"ANSVAR, ENTEN PÅ GRUNN AV KONTRAKT, INDIREKTE ELLER ANNET, SOM FORÅRSAKES AV ELLER I FORBINDELSE MED "
+"PROGRAMVAREN, ELLER BRUK OG ANNEN BENYTTING AV PROGRAMVAREN."
+
+#: src/About.cpp:157
+msgid "Licence"
+msgstr "Lisens"
+
+#: src/About.cpp:162 buttons/ok.xml:3
+msgid "OK"
+msgstr "OK"
+
+#: src/AnimationDlg.cpp:45
+msgid "font size"
+msgstr "skriftstørrelse"
+
+#: src/AnimationDlg.cpp:156
+msgid "Attribute"
+msgstr "Attributt"
+
+#: src/AnimationDlg.cpp:156
+msgid "Values (separated by semicolon)"
+msgstr "Verdier (atskilt med semikolon)"
+
+#: src/AnimationDlg.cpp:156
+msgid "Begin"
+msgstr "Begynn"
+
+#: src/AnimationDlg.cpp:156
+msgid "Duration (sec)"
+msgstr "Varighet (sek)"
+
+#: src/AnimationDlg.cpp:207
+msgid "Animations"
+msgstr "Animasjoner"
+
+#: src/AudioPropDlg.cpp:79
+msgid "Audio properties"
+msgstr "Egenskaper for lyd"
+
+#: src/AudioPropDlg.cpp:83 src/VideoPropDlg.cpp:106
+msgid "File Name:"
+msgstr "Filnavn:"
+
+#: src/AudioPropDlg.cpp:87 src/TitlePropDlg.cpp:196 src/VideoFrameDlg.cpp:77 src/VideoPropDlg.cpp:111
+#: src/VobListBox.cpp:109
+msgid "Duration:"
+msgstr "Varighet:"
+
+#: src/AudioPropDlg.cpp:91 src/VideoPropDlg.cpp:115
+msgid "Source Format:"
+msgstr "Kildeformat:"
+
+#: src/AudioPropDlg.cpp:95 src/VideoPropDlg.cpp:119
+msgid "Destination Format:"
+msgstr "Målformat:"
+
+#: src/AudioPropDlg.cpp:100
+msgid "5.1"
+msgstr "5.1"
+
+#: src/AudioPropDlg.cpp:104 src/SettingsDlg.cpp:72 src/SubtitlePropDlg.cpp:107
+msgid "Language:"
+msgstr "Språk:"
+
+#: src/AudioPropDlg.cpp:108
+msgid "Time delay:"
+msgstr "Forsinkelse:"
+
+#: src/AudioPropDlg.cpp:117
+msgid "ms"
+msgstr "ms"
+
+#: src/AudioPropDlg.cpp:120 src/VideoPropDlg.cpp:181
+msgid "Filters:"
+msgstr "Filter:"
+
+#: src/AudioPropDlg.cpp:125
+msgid "Volume adjustment"
+msgstr "Volumjustering"
+
+#: src/AudioPropDlg.cpp:128 src/SettingsDlg.cpp:202 src/SettingsDlg.cpp:300
+msgid "No"
+msgstr "Nei"
+
+#: src/AudioPropDlg.cpp:130
+msgid "Change (%)"
+msgstr "Endre (%)"
+
+#: src/AudioPropDlg.cpp:135 src/SettingsDlg.cpp:120
+msgid "Normalize"
+msgstr "Normaliser"
+
+#: src/AudioPropDlg.cpp:137
+msgid "Change (dB)"
+msgstr "Endre (db)"
+
+#: src/AudioPropDlg.cpp:206 src/Stream.cpp:102
+msgid "stereo"
+msgstr "stereo"
+
+#: src/AudioPropDlg.cpp:244 src/AudioPropDlg.cpp:426
+msgid "Track gain:"
+msgstr "Spor forsterkning:"
+
+#: src/AudioPropDlg.cpp:348
+#, c-format
+msgid "Invalid time value '%s'"
+msgstr "Ugyldig tidsverdi '%s'"
+
+#: src/AudioPropDlg.cpp:354
+#, c-format
+msgid "Invalid volume value '%s'"
+msgstr "Ugyldig volumverdi"
+
+#: src/AudioPropDlg.cpp:389
+msgid "Analysis of audio"
+msgstr "Analyse av lyd"
+
+#: src/AudioPropDlg.cpp:389 src/MainWin.cpp:825 src/SysUtils.cpp:303 src/VobListBox.cpp:577
+msgid "Please wait..."
+msgstr "Vennligst vent..."
+
+#: src/BurnDlg.cpp:104 src/BurnDlg.cpp:459 src/BurnDlg.cpp:466 src/BurnDlg.cpp:588 src/BurnDlg.cpp:595
+#: src/BurnDlg.cpp:601 src/BurnDlg.cpp:608 src/BurnDlg.cpp:615 src/BurnDlg.cpp:620 src/BurnDlg.cpp:627
+#: src/BurnDlg.cpp:632 src/BurnDlg.cpp:638 src/BurnDlg.cpp:644 src/BurnDlg.cpp:657 src/BurnDlg.cpp:660
+#: src/MainWin.cpp:1026 src/MainWin.cpp:1047 src/MainWin.cpp:1052 src/ProcessBurn.cpp:68
+#: src/ProcessBurn.cpp:86 src/ProcessBurn.cpp:128 src/ProcessFormatDvd.cpp:44 src/ProcessFormatDvd.cpp:53
+#: src/ProcessPreview.cpp:45 src/ProcessPreview.cpp:53 src/ProcessPreview.cpp:61 src/ProcessPreview.cpp:82
+#: src/ProcessPreview.cpp:87 src/TitlesetManager.cpp:467
+msgid "Burn"
+msgstr "Brenn"
+
+#: src/BurnDlg.cpp:109
+msgid "Temp directory:"
+msgstr "Midlertidig mappe:"
+
+#: src/BurnDlg.cpp:114 src/BurnDlg.cpp:138 src/BurnDlg.cpp:160 src/BurnDlg.cpp:186
+#: src/SubtitlePropDlg.cpp:148 src/SubtitlePropDlg.cpp:161 src/SubtitlePropDlg.cpp:179
+msgid "..."
+msgstr "..."
+
+#: src/BurnDlg.cpp:119 src/BurnDlg.cpp:166 src/BurnDlg.cpp:192
+msgid "Free:"
+msgstr "Ledig:"
+
+#: src/BurnDlg.cpp:123 src/BurnDlg.cpp:170 src/BurnDlg.cpp:196
+msgid "Required:"
+msgstr "Kreves:"
+
+#: src/BurnDlg.cpp:129
+msgid "preview"
+msgstr "forhåndsvisning"
+
+#: src/BurnDlg.cpp:146
+msgid "Download"
+msgstr "Nedlasting"
+
+#: src/BurnDlg.cpp:150
+msgid "just generate"
+msgstr "kun generer"
+
+#: src/BurnDlg.cpp:155 src/BurnDlg.cpp:181
+msgid "Save to:"
+msgstr "Lagre som:"
+
+#: src/BurnDlg.cpp:176
+msgid "create iso image"
+msgstr "lage iso-bilde"
+
+#: src/BurnDlg.cpp:202
+msgid "burn"
+msgstr "brenn"
+
+#: src/BurnDlg.cpp:207
+msgid "format DVD-RW"
+msgstr "formatere DVD-RW"
+
+#: src/BurnDlg.cpp:212
+msgid "Device:"
+msgstr "Enhet:"
+
+#: src/BurnDlg.cpp:216
+msgid "Speed:"
+msgstr "Hastighet:"
+
+#: src/BurnDlg.cpp:222
+msgid "add error correction data"
+msgstr "legg til feil-korreksjonsdata"
+
+#: src/BurnDlg.cpp:227 src/MenuCellsDlg.cpp:108
+msgid "Start"
+msgstr "Start"
+
+#: src/BurnDlg.cpp:229 src/SubtitlePropDlg.cpp:244 src/VideoFrameDlg.cpp:75 wxVillaLib/PropDlg.cpp:208
+msgid "Reset"
+msgstr "Tilbakestill"
+
+#: src/BurnDlg.cpp:341
+msgid "VLC media player"
+msgstr "VLC media spiller"
+
+#: src/BurnDlg.cpp:343
+msgid "MPC-HC player"
+msgstr "MPC-HC-spiller"
+
+#: src/BurnDlg.cpp:345
+msgid "Custom video player"
+msgstr "Egendefinerte videoavspiller"
+
+#: src/BurnDlg.cpp:396
+msgid "N/A"
+msgstr "N/A"
+
+#: src/BurnDlg.cpp:401 src/BurnDlg.cpp:436 src/BurnDlg.cpp:437 src/BurnDlg.cpp:438
+msgid "GB"
+msgstr "GB"
+
+#: src/BurnDlg.cpp:459
+msgid "There is not enough space to store ISO file."
+msgstr "Ikke nok plass til å lagre ISO filen."
+
+#: src/BurnDlg.cpp:466
+msgid "There is not enough space on temporary directory."
+msgstr "Ikke nok plass i midlertidig mappe."
+
+#: src/BurnDlg.cpp:507 src/BurnDlg.cpp:517 wxVillaLib/PropDlg.cpp:831
+msgid "Choose a directory"
+msgstr "Velg en mappe"
+
+#: src/BurnDlg.cpp:536 src/MainWin.cpp:1171 src/TitlePropDlg.cpp:423 src/TitlePropDlg.cpp:439
+#: wxVillaLib/PropDlg.cpp:789
+msgid "Choose a file"
+msgstr "Velg en fil"
+
+#: src/BurnDlg.cpp:537
+msgid "Programs"
+msgstr "Programmer"
+
+#: src/BurnDlg.cpp:538 src/MainWin.cpp:1005 src/MainWin.cpp:1166 src/MainWin.cpp:1170
+#: src/MenuObjectPropDlg.cpp:435 src/MenuPropDlg.cpp:136 src/MenuPropDlg.cpp:150 src/TitlePropDlg.cpp:235
+#: src/TitlePropDlg.cpp:425
+msgid "All Files"
+msgstr "Alle filer"
+
+#: src/BurnDlg.cpp:569
+msgid "Choose a file to save iso image"
+msgstr "Skriv inn et filnavn for å lagre iso bildet"
+
+#: src/BurnDlg.cpp:588
+msgid "Please enter output directory"
+msgstr "Skriv inn produksjonsmappe."
+
+#: src/BurnDlg.cpp:594
+msgid "Output directory contains files. Please choose another output directory."
+msgstr "Produksjonsmappen inneholder filer. Vennligst velg et annet produksjonsmappe."
+
+#: src/BurnDlg.cpp:600
+#, c-format
+msgid "Directory '%s' already exist. Do you want to overwrite it?"
+msgstr "Mappe '%s' eksiterer allerede. Vil du overskrive den?"
+
+#: src/BurnDlg.cpp:608 src/BurnDlg.cpp:660 src/ProcessCleanTemp.cpp:43 src/ProcessCleanTemp.cpp:47
+#: src/ProcessCleanTemp.cpp:51
+#, c-format
+msgid "Can't create directory '%s'"
+msgstr "Kan ikke opprette mappe '%s'"
+
+#: src/BurnDlg.cpp:615
+msgid "Please select a video player"
+msgstr "Velg en videoavspiller"
+
+#: src/BurnDlg.cpp:620
+msgid "Please select path to video player"
+msgstr "Velg bane til videoavspilleren"
+
+#: src/BurnDlg.cpp:627
+msgid "Please enter file name to save ISO"
+msgstr "Skriv inn filnavn for å lage ISO"
+
+#: src/BurnDlg.cpp:631
+#, c-format
+msgid "File '%s' already exist. Do you want to overwrite it?"
+msgstr "Filen '%s' eksiterer allerede. Vil du overskrive den?"
+
+#: src/BurnDlg.cpp:638
+msgid "Please enter device name"
+msgstr "Skriv inn enhetsnavn"
+
+#: src/BurnDlg.cpp:644
+msgid "Invalid device name"
+msgstr "Ugyldig enhetsnavn"
+
+#: src/BurnDlg.cpp:656
+#, c-format
+msgid ""
+"There are %d transcoded file(s) in the cache. They\n"
+"will be removed if you change temporary directory."
+msgstr ""
+"Det er %d om-kodede fil(er) i hurtigminnet. De vil\n"
+"bli fjernet hvis midlertidig mappe blir endret."
+
+#: src/Cache.cpp:238 src/Cache.cpp:263 src/Process.cpp:20 src/ProcessMenuTransitions.cpp:120
+#: src/ProcessTranscode.cpp:159 src/ProcessTranscode.cpp:174
+#, c-format
+msgid "Can't remove file '%s'"
+msgstr "Kan ikke fjerne fil '%s'"
+
+#: src/Cache.cpp:372
+#, c-format
+msgid "There is %d file (%0.1f MB) in the transcoding cache."
+msgid_plural "There are %d files (%0.1f MB) in the transcoding cache."
+msgstr[0] "Det er %d fil (% 0,1f MB) i omkoding bufferen."
+msgstr[1] "Det er %d filer (% 0,1f MB) i omkoding bufferen."
+
+#: src/Cache.cpp:375
+msgid "Do you want to clear the cache?"
+msgstr "Vil du å tømme hurtigminnet?"
+
+#: src/Cache.cpp:376 src/MainWin.cpp:962
+msgid "Confirm"
+msgstr "Bekreft"
+
+#: src/ChaptersDlg.cpp:94
+msgid "Chapters"
+msgstr "Kapitler"
+
+#: src/ChaptersDlg.cpp:103 src/TitlePropDlg.cpp:140
+msgid "Chapters:"
+msgstr "Kapitler:"
+
+#: src/ChaptersDlg.cpp:128 src/VideoFrameDlg.cpp:61 src/VideoPropDlg.cpp:206
+msgid "Time:"
+msgstr "Tid:"
+
+#: src/ChaptersDlg.cpp:142
+msgid "Type:"
+msgstr "Type:"
+
+#: src/ChaptersDlg.cpp:145 src/MenuCellsDlg.cpp:44 src/MenuCellsDlg.cpp:64 src/MenuCellsDlg.cpp:195
+#: src/MenuPropDlg.cpp:211
+msgid "Chapter"
+msgstr "Kapittel"
+
+#: src/ChaptersDlg.cpp:147 src/MenuCellsDlg.cpp:44 src/MenuCellsDlg.cpp:65 src/MenuCellsDlg.cpp:195
+msgid "Program"
+msgstr "Program"
+
+#: src/ChaptersDlg.cpp:149
+msgid "Regular cell"
+msgstr "Vanlig selle"
+
+#: src/ChaptersDlg.cpp:152 src/VideoPropDlg.cpp:234
+msgid "End:"
+msgstr "Slutt:"
+
+#: src/ChaptersDlg.cpp:156 src/DVD.cpp:953 src/DVD.cpp:981 src/MenuPropDlg.cpp:190
+msgid "Auto"
+msgstr "Auto"
+
+#: src/ChaptersDlg.cpp:157 src/DVD.cpp:984 src/MenuObjectPropDlg.cpp:157 src/MenuObjectPropDlg.cpp:536
+#: src/SettingsDlg.cpp:176
+msgid "Custom"
+msgstr "Tilpasse"
+
+#: src/ChaptersDlg.cpp:169 src/MenuPropDlg.cpp:166 src/TitlePropDlg.cpp:150
+msgid "Pause:"
+msgstr "Pause:"
+
+#: src/ChaptersDlg.cpp:174 src/MainWin.cpp:576 src/MenuPropDlg.cpp:166 src/SettingsDlg.cpp:162
+#: src/SettingsDlg.cpp:164 src/TitlePropDlg.cpp:150 src/TitlePropDlg.cpp:196 src/VideoFrameDlg.cpp:82
+#: src/VideoPropDlg.cpp:187 src/VideoPropDlg.cpp:192
+msgid "sec"
+msgstr "s"
+
+#: src/ChaptersDlg.cpp:177
+msgid "Commands:"
+msgstr "Kommandoer:"
+
+#: src/ChaptersDlg.cpp:188
+msgid "Add cell at begin if it doesn't exist"
+msgstr "Lag selle i starten hvis den ikke finnes"
+
+#: src/ChaptersDlg.cpp:445 src/ChaptersDlg.cpp:450
+#, c-format
+msgid "'%s' is not valid time"
+msgstr "'%s' er ikke gyldig tid"
+
+#: src/ChaptersDlg.cpp:455
+msgid "Start time cannot be after end time"
+msgstr "Starttiden kan ikke være etter sluttiden"
+
+#: src/DirCtrl.cpp:24 src/MainWin.cpp:266 src/MainWin.cpp:270
+msgid "&Refresh"
+msgstr "&Oppdatere"
+
+#: src/DVD.cpp:269 src/Menu.cpp:1118 src/MenuEditor.cpp:464
+msgid "Wide screen DVD menu can contain maximal 12 buttons"
+msgstr "Bredskjerm DVD meny kan kun ha opp til 12 knapper"
+
+#: src/DVD.cpp:272 src/Menu.cpp:1121 src/MenuEditor.cpp:467
+msgid "Wide screen DVD menu (nopanscan/noletterbox) can contain maximal 18 buttons"
+msgstr "Bredskjerm DVD meny (nopanscan/noletterbox) kan kun ha opp til 18 knapper"
+
+#: src/DVD.cpp:276 src/Menu.cpp:1125 src/MenuEditor.cpp:471
+msgid "DVD menu can contain maximal 34 buttons"
+msgstr "DVD meny kan kun ha opp til 34 knapper"
+
+#: src/DVD.cpp:358
+msgid "Some actions are invalid. Please click 'Details' for more information."
+msgstr "Noen av handlingene er ugyldige. Klikk 'Detaljer' for mer informasjon."
+
+#: src/DVD.cpp:485
+#, c-format
+msgid "Cannot open file '%s'."
+msgstr "Kan ikke åpne fil '%s'."
+
+#: src/DVD.cpp:491
+#, c-format
+msgid "'%s' is not a DVDStyler project file"
+msgstr "'%s' er ikke en DVDStyler prosjekt-fil"
+
+#: src/DVD.cpp:587
+msgid "Can't load vmgm menus"
+msgstr "Kan ikke laste inn vmgm menyer"
+
+#: src/DVD.cpp:596
+msgid "Can't load titleset"
+msgstr "Kan ikke laste inn titteloppsett"
+
+#: src/DVD.cpp:912 src/DVD.cpp:931 src/DVD.cpp:944
+msgid "Omit"
+msgstr "Utelate"
+
+#: src/DVD.cpp:914 src/DVD.cpp:933 src/DVD.cpp:946 src/ProgressDlg.cpp:227
+msgid "Copy"
+msgstr "Kopier"
+
+#: src/DVD.cpp:934
+msgid "MP2 48 kHz"
+msgstr "MP2 48 kHz"
+
+#: src/DVD.cpp:935
+msgid "AC3 48 kHz"
+msgstr "AC3 48 kHz"
+
+#: src/DVD.cpp:937
+msgid "PCM 48 kHz"
+msgstr "PCM 48 kHz"
+
+#: src/DVD.cpp:961
+msgid "CD (700 MB)"
+msgstr "CD (700 MB)"
+
+#: src/DVD.cpp:962
+msgid "DVD-1 (1.4 GB)"
+msgstr "DVD-1 (1.4 GB)"
+
+#: src/DVD.cpp:963
+msgid "DVD-2 (2.6 GB)"
+msgstr "DVD-2 (2.6 GB)"
+
+#: src/DVD.cpp:964
+msgid "DVD-5 (4.7 GB)"
+msgstr "DVD-5 (4.7 GB)"
+
+#: src/DVD.cpp:965
+msgid "DVD-9 (8.5 GB)"
+msgstr "DVD-9 (8.5 GB)"
+
+#: src/DVD.cpp:966
+msgid "Unlimited"
+msgstr "Ubegrenset"
+
+#: src/DVD.cpp:973
+msgid "Call last menu"
+msgstr "Hent siste meny"
+
+#: src/DVD.cpp:974
+msgid "Call root menu"
+msgstr "Hent rot meny"
+
+#: src/DVD.cpp:975
+msgid "Play next title"
+msgstr "Vis neste tittel"
+
+#: src/DVD.cpp:983
+#, c-format
+msgid "%d MBit/s"
+msgstr "%d MBit/s"
+
+#: src/DVDAction.cpp:43
+#, c-format
+msgid "select audio track %d and "
+msgstr "velg lydspor %d og "
+
+#: src/DVDAction.cpp:46
+#, c-format
+msgid "select subtitle track %d and "
+msgstr "velg undertittelspor %d og "
+
+#: src/DVDAction.cpp:54
+msgid "jump to start of current menu"
+msgstr "gå til start av aktuell meny"
+
+#: src/DVDAction.cpp:63
+#, c-format
+msgid "from titleset %d"
+msgstr "fra titteloppsett"
+
+#: src/DVDAction.cpp:69
+msgid "jump to title menu"
+msgstr "gå til tittel meny"
+
+#: src/DVDAction.cpp:69
+msgid "jump to root menu"
+msgstr "gå til rot meny"
+
+#: src/DVDAction.cpp:69
+msgid "jump to subtitle menu"
+msgstr "gå til undertittel meny"
+
+#: src/DVDAction.cpp:70
+msgid "jump to audio menu"
+msgstr "gå til audio meny"
+
+#: src/DVDAction.cpp:70
+msgid "jump to angle menu"
+msgstr "gå til vinkel meny"
+
+#: src/DVDAction.cpp:70
+msgid "jump to chapter menu"
+msgstr "gå til kapittel meny"
+
+#: src/DVDAction.cpp:75 src/DVDAction.cpp:184 src/MenuObjectPropDlg.cpp:626 src/MenuObjectPropDlg.cpp:646
+msgid "menu"
+msgstr "meny"
+
+#: src/DVDAction.cpp:77 src/DVDAction.cpp:94
+msgid "jump to menu"
+msgstr "gå til meny"
+
+#: src/DVDAction.cpp:92
+msgid "jump to VMGM menu"
+msgstr "gå til VMGM meny"
+
+#: src/DVDAction.cpp:100
+#, c-format
+msgid "jump to title %d chapter %d"
+msgstr "gå til tittel %d kapittel %d"
+
+#: src/DVDAction.cpp:105
+msgid "jump to title"
+msgstr "gå til tittel"
+
+#: src/DVDAction.cpp:183 src/MenuObjectPropDlg.cpp:418 src/MenuObjectPropDlg.cpp:639
+#: src/MenuObjectPropDlg.cpp:648 src/MenuObjectPropDlg.cpp:658 src/MenuObjectPropDlg.cpp:667
+#: src/MenuObjectPropDlg.cpp:676
+msgid "titleset"
+msgstr "oppsett"
+
+#: src/DVDAction.cpp:184 src/MenuObjectPropDlg.cpp:416 src/MenuObjectPropDlg.cpp:656
+#: src/MenuObjectPropDlg.cpp:665 src/MenuObjectPropDlg.cpp:677
+msgid "title"
+msgstr "tittel"
+
+#: src/DVDAction.cpp:186 src/MenuObjectPropDlg.cpp:615 src/MenuPropDlg.cpp:55
+msgid "VMGM menu"
+msgstr "VMGM meny"
+
+#: src/DVDAction.cpp:196
+#, c-format
+msgid "cannot jump to titleset %d, only %d exist"
+msgstr "kan ikke gå til titteloppsett %d, bare %d finnes"
+
+#: src/DVDAction.cpp:204
+msgid "cannot jump to VMGM menu; none exist"
+msgstr "kan ikke gå til VMGM meny; finnes ikke"
+
+#: src/DVDAction.cpp:206 src/DVDAction.cpp:441
+msgid "cannot jump to menu; none exist"
+msgstr "kan ikke gå til meny; finnes ikke"
+
+#: src/DVDAction.cpp:211 src/MenuObjectPropDlg.cpp:632
+msgid "title menu"
+msgstr "tittelmeny"
+
+#: src/DVDAction.cpp:211 src/MenuObjectPropDlg.cpp:632
+msgid "root menu"
+msgstr "rot meny"
+
+#: src/DVDAction.cpp:211 src/MenuObjectPropDlg.cpp:632
+msgid "subtitle menu"
+msgstr "undertittel meny"
+
+#: src/DVDAction.cpp:211 src/MenuObjectPropDlg.cpp:633
+msgid "audio menu"
+msgstr "lyd meny"
+
+#: src/DVDAction.cpp:212 src/MenuObjectPropDlg.cpp:633
+msgid "angle menu"
+msgstr "vinkel meny"
+
+#: src/DVDAction.cpp:212 src/MenuObjectPropDlg.cpp:633
+msgid "chapter menu"
+msgstr "kapittel meny"
+
+#: src/DVDAction.cpp:215
+#, c-format
+msgid "cannot find %s"
+msgstr "finner ikke %s"
+
+#: src/DVDAction.cpp:220
+#, c-format
+msgid "cannot jump to VMGM menu %d, only %d exist"
+msgstr "kan ikke gå til VMGM meny %d, bare %d finnes"
+
+#: src/DVDAction.cpp:222
+#, c-format
+msgid "cannot jump to menu %d, only %d exist"
+msgstr "kan ikke gå til meny %d, bare %d finnes"
+
+#: src/DVDAction.cpp:233
+msgid "cannot jump to title; none exist"
+msgstr "kan ikke gå til tittel, finnes ikke"
+
+#: src/DVDAction.cpp:236
+#, c-format
+msgid "cannot jump to title %d, only %d exist"
+msgstr "kan ikke gå til tittel %d, bare %d finnes"
+
+#: src/DVDAction.cpp:241
+#, c-format
+msgid "cannot jump to chapter %d of title %d, only %d exist"
+msgstr "kan ikke gå til kapittel %d i tittel %d, bare %d finnes"
+
+#: src/DVDAction.cpp:253
+msgid "cannot jump to a specific menu in another titleset, only to root/chapter/audio/subtitle/angle menu"
+msgstr ""
+"kan ikke gå til en bestemt meny i et annet titteloppsett, bare til root/chapter/audio/subtitle/angle meny"
+
+#: src/DVDAction.cpp:256
+msgid "cannot jump from regular menu to a title in another titleset, use VMGM menu instead"
+msgstr "kan ikke gå fra vanlig meny til en tittel i et annet titteloppsett, bruk VMGM meny i stedet"
+
+#: src/DVDAction.cpp:258
+msgid "cannot jump to a title in another titleset"
+msgstr "kan ikke gå til en tittel i et annet titteloppsett"
+
+#: src/DVDAction.cpp:270
+msgid "invalid action"
+msgstr "ugyldig handling"
+
+#: src/DVDAction.cpp:280 src/DVDAction.cpp:371
+msgid "cannot jump to a menu from a title, use 'call' instead"
+msgstr "kan ikke gå til meny fra tittel, bruk 'hent' i stedet"
+
+#: src/DVDAction.cpp:287 src/DVDAction.cpp:403
+msgid "chapter"
+msgstr "kapittel"
+
+#: src/DVDAction.cpp:287 src/DVDAction.cpp:403
+msgid "program"
+msgstr "program"
+
+#: src/DVDAction.cpp:287 src/DVDAction.cpp:403
+msgid "cell"
+msgstr "celle"
+
+#: src/DVDAction.cpp:288 src/DVDAction.cpp:404
+#, c-format
+msgid "jumping from VMGM menu to %s is not allowed"
+msgstr "å gå fra VMGM meny til %s er ikke tillatt"
+
+#: src/DVDAction.cpp:320
+#, c-format
+msgid "on token '%s'"
+msgstr "på tegn '%s'"
+
+#: src/DVDAction.cpp:336
+msgid "0 is not valid menu/chapter number"
+msgstr "0 er ikke et gyldig meny / kapittelnummer"
+
+#: src/DVDAction.cpp:340
+msgid "0 is not valid title number"
+msgstr "0 er ikke et gyldig tittelnummer"
+
+#: src/DVDAction.cpp:344
+msgid "0 is not valid program number"
+msgstr "0 er ikke et gyldig programnummer"
+
+#: src/DVDAction.cpp:348
+msgid "0 is not valid cell number"
+msgstr "0 er ikke et gyldig sellenummer"
+
+#: src/DVDAction.cpp:377
+msgid "cannot specify chapter when jumping to another menu"
+msgstr "kan ikke angi kapittel ved gå til en annen meny"
+
+#: src/DVDAction.cpp:381
+msgid "cannot omit menu/title if specifying vmgm/titleset"
+msgstr "kan ikke utelate meny/tittel hvis vmgm/titteloppsett er spesifisert"
+
+#: src/DVDAction.cpp:385 src/DVDAction.cpp:468
+msgid "VMGM must be specified with FPC"
+msgstr "VMGM må angis med FPC"
+
+#: src/DVDAction.cpp:396
+msgid "VMGM does not have titles"
+msgstr "VMGM har ikke titler"
+
+#: src/DVDAction.cpp:409
+msgid "cannot jump to a chapter from a FPC"
+msgstr "kan ikke gå til et kapittel fra en FPC"
+
+#: src/DVDAction.cpp:415
+msgid "menus do not have chapters"
+msgstr "menyene har ikke kapitler"
+
+#: src/DVDAction.cpp:420
+#, c-format
+msgid "cannot jump to chapter %d, only %d exist"
+msgstr "kan ikke gå til kapittel %d, bare %d finnes"
+
+#: src/DVDAction.cpp:455
+msgid "cannot 'call' a menu from another menu, use 'jump' instead"
+msgstr "kan ikke 'hente' en meny fra en annen meny, bruk 'gå til' i stedet"
+
+#: src/DVDAction.cpp:459
+msgid "cannot 'call' another title, use 'jump' instead"
+msgstr "kan ikke 'hente' en annen tittel, bruk 'gå til' i stedet"
+
+#: src/DVDAction.cpp:463
+msgid "cannot 'call' a chapter within a menu"
+msgstr "kan ikke 'hente' et kapittel i en meny"
+
+#: src/DVDAction.cpp:473
+msgid "cannot call to a menu in another titleset"
+msgstr "kan ikke vise til en meny i et annet titteloppsett"
+
+#: src/DVDAction.cpp:476
+msgid "cannot call to a specific menu PGC, only an entry"
+msgstr "kan ikke vise til en bestemt meny PGC, bare en oppføring"
+
+#: src/DVDAction.cpp:504
+#, c-format
+msgid "cannot set SPRM %d"
+msgstr "kan ikke sette SPRM %d"
+
+#: src/DVDAction.cpp:558
+#, c-format
+msgid "unsupported VM opcode %d"
+msgstr "ikke støttet VM operasjonkode %d"
+
+#: src/DVDAction.cpp:577
+#, c-format
+msgid "invalid action '%s'"
+msgstr "ugyldig handling '%s'"
+
+#: src/DVDPropDlg.cpp:29
+msgid "First Play Commands:"
+msgstr "Forfilm kommandoer:"
+
+#: src/DVDPropDlg.cpp:31
+msgid "Create jumppads"
+msgstr "Lage springbrett"
+
+#: src/DVDPropDlg.cpp:32
+msgid "Create empty VMGM/titleset menus if it doesn't exist"
+msgstr "Lag tomt VMGM/titteloppsett hvis det ikke finnes"
+
+#: src/dvdstyler.cpp:191
+msgid "automatically starts the generation and burning"
+msgstr "starter generering og brenning automatisk"
+
+#: src/dvdstyler.cpp:192
+msgid "temporary directory"
+msgstr "midlertidig mappe"
+
+#: src/dvdstyler.cpp:193
+msgid "output directory"
+msgstr "produksjon mappe"
+
+#: src/dvdstyler.cpp:194
+msgid "output ISO file name"
+msgstr "produksjons ISO filnavn"
+
+#: src/dvdstyler.cpp:195
+msgid "DVD device to burn"
+msgstr "DVD-enheten til å brenne"
+
+#: src/dvdstyler.cpp:196
+msgid "write log messages to standard error"
+msgstr "skriv logg beskjeder til standard feil"
+
+#: src/dvdstyler.cpp:197
+msgid "show version of program"
+msgstr "vis programversjon"
+
+#: src/dvdstyler.cpp:198
+msgid "show summary of options"
+msgstr "vis valgsammendrag"
+
+#: src/dvdstyler.cpp:199
+msgid "input file"
+msgstr "inn-fil"
+
+#: src/MainWin.cpp:160
+msgid "&New\tCtrl-N"
+msgstr "&Ny\tCtrl-N"
+
+#: src/MainWin.cpp:161
+msgid "&Open...\tCtrl-O"
+msgstr "&Åpne...\tCtrl-O"
+
+#: src/MainWin.cpp:162
+msgid "&Save\tCtrl-S"
+msgstr "&Lagre\tCtrl-S"
+
+#: src/MainWin.cpp:163
+msgid "S&ave as...\tShift-Ctrl-S"
+msgstr "L&agre som...\tShift-Ctrl-S"
+
+#: src/MainWin.cpp:164
+msgid "&Burn DVD...\tF9"
+msgstr "&Brenn DVD...\tF9"
+
+#: src/MainWin.cpp:169
+msgid "&Exit\tAlt-X"
+msgstr "A&vslutt\tAlt-X"
+
+#: src/MainWin.cpp:170
+msgid "&File"
+msgstr "&Fil"
+
+#: src/MainWin.cpp:172
+msgid "&Undo\tCtrl-Z"
+msgstr "&Angre\tCtrl-Z"
+
+#: src/MainWin.cpp:175
+msgid "&Redo\tCtrl-Y"
+msgstr "&Gjør om\tCtrl-Y"
+
+#: src/MainWin.cpp:178
+msgid "&Edit"
+msgstr "&Rediger"
+
+#: src/MainWin.cpp:181 src/MainWin.cpp:317 src/TitlesetManager.cpp:146 src/TitlesetManager.cpp:167
+msgid "&File..."
+msgstr "&Fil..."
+
+#: src/MainWin.cpp:182 src/MainWin.cpp:318 src/TitlesetManager.cpp:147 src/TitlesetManager.cpp:168
+msgid "File as &chapter..."
+msgstr "Fil som &kapittel..."
+
+#: src/MainWin.cpp:183 src/MainWin.cpp:319 src/TitlesetManager.cpp:148 src/TitlesetManager.cpp:169
+msgid "Titles from &DVD..."
+msgstr "Tittler fra &DVD..."
+
+#: src/MainWin.cpp:184 src/TitlesetManager.cpp:149 src/TitlesetManager.cpp:170
+msgid "&Menu"
+msgstr "&Meny"
+
+#: src/MainWin.cpp:185 src/TitlesetManager.cpp:150 src/TitlesetManager.cpp:171
+msgid "&Chapter menu"
+msgstr "&Kapittel meny"
+
+#: src/MainWin.cpp:186
+msgid "&VMGM menu"
+msgstr "&VMGM meny"
+
+#: src/MainWin.cpp:187 src/TitlesetManager.cpp:152 src/TitlesetManager.cpp:173
+msgid "&Titleset"
+msgstr "&Titteloppsett"
+
+#: src/MainWin.cpp:188 src/MenuEditor.cpp:360 src/MenuEditor.cpp:382 src/TitlesetManager.cpp:155
+#: src/TitlesetManager.cpp:176
+msgid "&Add"
+msgstr "&Legg til"
+
+#: src/MainWin.cpp:190
+msgid "&Options..."
+msgstr "&Brukervalg..."
+
+#: src/MainWin.cpp:191
+msgid "&DVD"
+msgstr "&DVD"
+
+#: src/MainWin.cpp:193
+msgid "&Settings..."
+msgstr "&Innstillinger..."
+
+#: src/MainWin.cpp:194
+msgid "&Configuration"
+msgstr "&Konfigurasjon"
+
+#: src/MainWin.cpp:196
+msgid "&Contents\tF1"
+msgstr "&Innhold\tF1"
+
+#: src/MainWin.cpp:197
+msgid "&About..."
+msgstr "&Om..."
+
+#: src/MainWin.cpp:198
+msgid "&Help"
+msgstr "&Hjelp"
+
+#: src/MainWin.cpp:201
+msgid "Directory"
+msgstr "Mappe"
+
+#: src/MainWin.cpp:261
+msgid "&Assign to background"
+msgstr "&Bruke som bakgrunn"
+
+#: src/MainWin.cpp:263
+#, fuzzy
+msgid "&Play"
+msgstr "Spill av alt"
+
+#: src/MainWin.cpp:264 src/MenuEditor.cpp:374 src/TitlesetManager.cpp:184 wxVillaLib/PropDlg.cpp:649
+msgid "&Delete"
+msgstr "&Slett"
+
+#: src/MainWin.cpp:290
+msgid "DVDStyler"
+msgstr "DVDStyler"
+
+#: src/MainWin.cpp:303
+msgid "New"
+msgstr "Ny"
+
+#: src/MainWin.cpp:304
+msgid "Open..."
+msgstr "Åpne..."
+
+#: src/MainWin.cpp:305
+msgid "Save"
+msgstr "Lagre"
+
+#: src/MainWin.cpp:307 src/MainWin.cpp:309
+msgid "DVD Options..."
+msgstr "DVD Brukervalg..."
+
+#: src/MainWin.cpp:311
+msgid "Burn..."
+msgstr "Brenn..."
+
+#: src/MainWin.cpp:315 src/MainWin.cpp:323
+msgid "Add File..."
+msgstr "Legg til fil..."
+
+#: src/MainWin.cpp:340 src/MainWin.cpp:348
+msgid "File browser"
+msgstr "Fil-liste"
+
+#: src/MainWin.cpp:341 src/MainWin.cpp:350 src/MainWin.cpp:453
+msgid "Backgrounds"
+msgstr "Bakgrunner"
+
+#: src/MainWin.cpp:342 src/MainWin.cpp:351 src/MainWin.cpp:486 src/MenuPropDlg.cpp:177
+msgid "Buttons"
+msgstr "Knapper"
+
+#: src/MainWin.cpp:482 src/MenuObject.cpp:336 src/MenuObjectPropDlg.cpp:246 src/MenuObjectPropDlg.cpp:261
+#: buttons/text-circle-v2.xml:13 buttons/text-square-v2.xml:14 buttons/text-underlined-v3.xml:12
+#: buttons/text-v3.xml:13
+msgid "button"
+msgstr "knapp"
+
+#: src/MainWin.cpp:536
+msgid "Double click to set the background."
+msgstr "Dobbelklikk for å legge inn bakgrunn."
+
+#: src/MainWin.cpp:543
+#, c-format
+msgid "%s (%.1f KB)"
+msgstr "%s (%.1f KB)"
+
+#: src/MainWin.cpp:545
+#, c-format
+msgid "%s (%.1f MB)"
+msgstr "%s (%.1f MB)"
+
+#: src/MainWin.cpp:548
+#, c-format
+msgid "%s (%.1f GB)"
+msgstr "%s (%.1f GB)"
+
+#: src/MainWin.cpp:568
+#, c-format
+msgid "%d slides"
+msgstr "%d lysbilder"
+
+#: src/MainWin.cpp:580 src/SettingsDlg.cpp:125
+msgid "min"
+msgstr "min"
+
+#: src/MainWin.cpp:655
+#, c-format
+msgid "Are you sure you want to delete '%s' from the file system?"
+msgstr "Sikker på at du vil slette %s fra filsystemet?"
+
+#: src/MainWin.cpp:755
+msgid "Select chapter"
+msgstr "Velg kapittel"
+
+#: src/MainWin.cpp:782
+msgid "Play all"
+msgstr "Spill av alt"
+
+#: src/MainWin.cpp:784
+msgid "Select title"
+msgstr "Velg tittel"
+
+#: src/MainWin.cpp:786 src/TitlesetManager.cpp:1001
+msgid "Back"
+msgstr "Tilbake"
+
+#: src/MainWin.cpp:788
+msgid "Previous"
+msgstr "Forrige"
+
+#: src/MainWin.cpp:790
+msgid "Next"
+msgstr "Neste"
+
+#: src/MainWin.cpp:836
+#, c-format
+msgid "Error opening '%s'"
+msgstr "Feil ved åpning av '%s'"
+
+#: src/MainWin.cpp:856
+msgid "Open a DVDStyler project file"
+msgstr "Åpne et DVDStyler prosjektfil"
+
+#: src/MainWin.cpp:857 src/MainWin.cpp:1004
+msgid "Project files"
+msgstr "Prosjekt filer"
+
+#: src/MainWin.cpp:888 src/MainWin.cpp:960
+msgid "Untitled"
+msgstr "Navnløs"
+
+#: src/MainWin.cpp:961
+#, c-format
+msgid "The file '%s' was modified, save changes?"
+msgstr "Filen '%s' er blitt endret, lagre endringer?"
+
+#: src/MainWin.cpp:1003
+msgid "Save a DVDStyler project file"
+msgstr "Lagre en DVDStyler prosjektfil"
+
+#: src/MainWin.cpp:1025
+msgid ""
+"The selected video files don't fit on DVD. Please reduce\n"
+"video quality (bitrate) or remove some titles."
+msgstr ""
+"Valgt video fil er for stor for DVD. Reduser video\n"
+"kvaliteten (bit-frekvens) eller fjern noen titler."
+
+#: src/MainWin.cpp:1046
+msgid ""
+"Project doesn't contain any video title. To add a title please\n"
+"drag a video file into the bottom section of the window."
+msgstr ""
+"Prosjektet mangler video tittel. For å legge til en\n"
+"tittel, dra en video-fil til nedre seksjon av vinduet."
+
+#: src/MainWin.cpp:1051
+#, c-format
+msgid ""
+"Titleset %d doesn't contain any video title. To add a title\n"
+"please drag a video file into the bottom section of the window."
+msgstr ""
+"Titteloppsettet %d mangler videotittel. For å legge til en\n"
+"tittel, dra en video-fil til nedre seksjon av vinduet."
+
+#: src/MainWin.cpp:1160
+msgid "Audio/Video/Subtitle Files"
+msgstr "Lyd/Video/Undertittel Filer"
+
+#: src/MainWin.cpp:1162 src/MenuPropDlg.cpp:149 src/TitlePropDlg.cpp:234 src/TitlePropDlg.cpp:441
+msgid "Audio Files"
+msgstr "Lyd Filer"
+
+#: src/MainWin.cpp:1163 src/MainWin.cpp:1168 src/MenuPropDlg.cpp:134
+msgid "Video Files"
+msgstr "Video Filer"
+
+#: src/MainWin.cpp:1164 src/TitlePropDlg.cpp:442
+msgid "Subtitle Files"
+msgstr "Undertittel Filer"
+
+#: src/MainWin.cpp:1165 src/MainWin.cpp:1169
+msgid "Image Files"
+msgstr "Bildefiler"
+
+#: src/MainWin.cpp:1197
+msgid "Choose DVD device or directory"
+msgstr "Velg DVD enhet eller mappe"
+
+#: src/MainWin.cpp:1249
+msgid "Choose a titleset to add:"
+msgstr "Velg et titloppset for å legge til:"
+
+#: src/Menu.cpp:816
+#, c-format
+msgid "%s and %s are overlapping"
+msgstr "%s og %s er overlappende"
+
+#: src/MenuActionsDlg.cpp:103
+msgid "ID"
+msgstr "ID"
+
+#: src/MenuActionsDlg.cpp:103
+msgid "Command"
+msgstr "Kommando"
+
+#: src/MenuActionsDlg.cpp:136
+msgid "Menu Actions"
+msgstr "Meny handlinger"
+
+#: src/MenuActionsDlg.cpp:138
+msgid "Actions:"
+msgstr "Handlinger:"
+
+#: src/MenuActionsDlg.cpp:220
+#, c-format
+msgid "Duplicated action ID '%s'."
+msgstr "Gjenta handlings ID '%s'."
+
+#: src/MenuCellsDlg.cpp:44 src/MenuCellsDlg.cpp:195
+msgid "Regular"
+msgstr "Vanlig"
+
+#: src/MenuCellsDlg.cpp:108
+msgid "Type"
+msgstr "Type"
+
+#: src/MenuCellsDlg.cpp:108
+msgid "End"
+msgstr "Slutt"
+
+#: src/MenuCellsDlg.cpp:108
+msgid "Pause"
+msgstr "Pause"
+
+#: src/MenuCellsDlg.cpp:108
+msgid "Commands"
+msgstr "Kommandoer"
+
+#: src/MenuCellsDlg.cpp:140
+msgid "Menu cells"
+msgstr "Meny celler"
+
+#: src/MenuCellsDlg.cpp:142
+msgid "Cells:"
+msgstr "Celler:"
+
+#: src/MenuCellsDlg.cpp:238 src/MenuCellsDlg.cpp:242
+#, c-format
+msgid "The cells %d and %d are overlapping"
+msgstr "Cellene %d og %d er overlappende"
+
+#: src/MenuEditor.cpp:93 src/MenuEditor.cpp:417
+msgid ": unknown format"
+msgstr ": ukjent format"
+
+#: src/MenuEditor.cpp:308
+msgid "&Bring to Front"
+msgstr "&Flytt øverst"
+
+#: src/MenuEditor.cpp:309
+msgid "Bring &Forward"
+msgstr "Flytt fre&mover"
+
+#: src/MenuEditor.cpp:310
+msgid "Send Back&ward"
+msgstr "Flytt bak&over"
+
+#: src/MenuEditor.cpp:311
+msgid "&Send to Back"
+msgstr "Flytt bakerst"
+
+#: src/MenuEditor.cpp:315
+msgid "To &Left"
+msgstr "Til &Venstre"
+
+#: src/MenuEditor.cpp:316
+msgid "To &Right"
+msgstr "Til &Høyre"
+
+#: src/MenuEditor.cpp:317
+msgid "To &Top"
+msgstr "Til &Topp"
+
+#: src/MenuEditor.cpp:318
+msgid "To &Bottom"
+msgstr "Til &Bunnen"
+
+#: src/MenuEditor.cpp:319
+msgid "To Center &horizontally"
+msgstr "Til Sentrer &horisontalt"
+
+#: src/MenuEditor.cpp:320
+msgid "To Center &vertically"
+msgstr "Til Sentrer &vertikalt"
+
+#: src/MenuEditor.cpp:321
+msgid "To &Center of Menu horizontally"
+msgstr "Til &Sentrer av Meny horisontalt"
+
+#: src/MenuEditor.cpp:322
+msgid "To Center of &Menu vertically"
+msgstr "Til Sentrer av &Meny vertikalt"
+
+#: src/MenuEditor.cpp:340
+msgid "&Show Safe TV area"
+msgstr "&Vis sikkert TV område"
+
+#: src/MenuEditor.cpp:345
+msgid "&none"
+msgstr "&ingen"
+
+#: src/MenuEditor.cpp:352
+msgid "&Show"
+msgstr "&Vis"
+
+#: src/MenuEditor.cpp:353
+msgid "&Over objects"
+msgstr "&Over objekter"
+
+#: src/MenuEditor.cpp:354
+msgid "&Colour..."
+msgstr "Farge..."
+
+#: src/MenuEditor.cpp:358
+msgid "A&rrange"
+msgstr "A&rranger"
+
+#: src/MenuEditor.cpp:359
+msgid "A&lign"
+msgstr "&Juster"
+
+#: src/MenuEditor.cpp:363
+msgid "&First highlighted button"
+msgstr "&Første uthevet knapp"
+
+#: src/MenuEditor.cpp:365
+msgid "Cu&t"
+msgstr "Klipp u&t"
+
+#: src/MenuEditor.cpp:368 src/TitlesetManager.cpp:178
+msgid "&Copy"
+msgstr "&Kopier"
+
+#: src/MenuEditor.cpp:371 src/MenuEditor.cpp:385 src/TitlesetManager.cpp:156 src/TitlesetManager.cpp:181
+msgid "&Paste"
+msgstr "&Lim inn"
+
+#: src/MenuEditor.cpp:378 src/MenuEditor.cpp:388 src/TitlesetManager.cpp:187
+msgid "&Properties..."
+msgstr "&Egenskaper..."
+
+#: src/MenuEditor.cpp:383
+msgid "&View"
+msgstr "&Vis"
+
+#: src/MenuEditor.cpp:384
+msgid "&Grid"
+msgstr "&Rutenett"
+
+#: src/MenuEditor.cpp:498 src/ProcessMenuTransitions.cpp:177
+#, c-format
+msgid "VMGM menu %d"
+msgstr "VMGM Meny %d"
+
+#: src/MenuEditor.cpp:498
+#, c-format
+msgid "Menu %d"
+msgstr "Meny %d"
+
+#: src/MenuEditor.cpp:500
+#, c-format
+msgid "button%d"
+msgstr "knapp%d"
+
+#: src/MenuEditor.cpp:543
+msgid "Please type in text to insert"
+msgstr "Angi tekst som skal legges inn"
+
+#: src/MenuEditor.cpp:543
+msgid "Input text"
+msgstr "Skriv tekst"
+
+#: src/MenuEditor.cpp:545
+msgid "Please choose an image to insert"
+msgstr "Velg et bilde som skal legges inn"
+
+#: src/MenuEditor.cpp:546 src/MenuObjectPropDlg.cpp:434 src/MenuPropDlg.cpp:135 src/TitlePropDlg.cpp:424
+msgid "Image Files "
+msgstr "Bildefiler "
+
+#: src/MenuEditor.cpp:548 buttons/arrow-text-left.xml:8 buttons/arrow-text-left.xml:12
+#: buttons/arrow-text-right.xml:8 buttons/arrow-text-right.xml:13 buttons/pill2.xml:24 buttons/pill2.xml:36
+#: buttons/pill3.xml:17 buttons/pill3.xml:29 buttons/text-v3.xml:3 objects/text-v2.xml:3
+#: objects/text-v2.xml:19
+msgid "Text"
+msgstr "Tekst"
+
+#: src/MenuObject.cpp:336
+msgid "object"
+msgstr "objekt"
+
+#: src/MenuObject.cpp:1229 src/MenuObject.cpp:1238
+#, c-format
+msgid "can't open file '%s'"
+msgstr "kan ikke åpne fil '%s'"
+
+#: src/MenuObjectPropDlg.cpp:63 src/MenuPropDlg.cpp:49 src/TitlePropDlg.cpp:68
+msgid "Properties"
+msgstr "Egenskaper"
+
+#: src/MenuObjectPropDlg.cpp:102 src/MenuObjectPropDlg.cpp:112
+msgid "Action"
+msgstr "Handling"
+
+#: src/MenuObjectPropDlg.cpp:130
+msgid "Jump to"
+msgstr "Gå til"
+
+#: src/MenuObjectPropDlg.cpp:139
+msgid "Play all titles"
+msgstr "Spill alle titler"
+
+#: src/MenuObjectPropDlg.cpp:141
+msgid "single titleset"
+msgstr "enkelt oppsett"
+
+#: src/MenuObjectPropDlg.cpp:142
+msgid "all titlesets"
+msgstr "alle oppsett"
+
+#: src/MenuObjectPropDlg.cpp:169 src/MenuObjectPropDlg.cpp:178
+msgid "last selected"
+msgstr "sist valgte"
+
+#: src/MenuObjectPropDlg.cpp:171 src/MenuObjectPropDlg.cpp:181
+msgid "track"
+msgstr "spor"
+
+#: src/MenuObjectPropDlg.cpp:172 src/MenuPropDlg.cpp:212 src/TitlePropDlg.cpp:254
+msgid "Audio"
+msgstr "Lyd"
+
+#: src/MenuObjectPropDlg.cpp:179
+msgid "off"
+msgstr "av"
+
+#: src/MenuObjectPropDlg.cpp:182
+msgid "subtitle"
+msgstr "undertittel"
+
+#: src/MenuObjectPropDlg.cpp:190
+msgid "Auto execute command by select"
+msgstr "Valg av automatisk kjørekomando"
+
+#: src/MenuObjectPropDlg.cpp:193
+msgid "Navigation"
+msgstr "Navigasjon"
+
+#: src/MenuObjectPropDlg.cpp:208 src/MenuObjectPropDlg.cpp:218
+msgid "Look"
+msgstr "Se"
+
+#: src/MenuObjectPropDlg.cpp:242 src/MenuObjectPropDlg.cpp:249
+msgid "none"
+msgstr "ingen"
+
+#: src/MenuObjectPropDlg.cpp:248 src/MenuPropDlg.cpp:121 src/SettingsDlg.cpp:272 src/VideoPropDlg.cpp:131
+msgid "auto"
+msgstr "auto"
+
+#: src/MenuObjectPropDlg.cpp:292
+msgid "Normal"
+msgstr "Normal"
+
+#: src/MenuObjectPropDlg.cpp:293
+msgid "Highlighted"
+msgstr "Markert"
+
+#: src/MenuObjectPropDlg.cpp:294
+msgid "Selected"
+msgstr "Valgt"
+
+#: src/MenuObjectPropDlg.cpp:320
+msgid "Font..."
+msgstr "Skrifttype..."
+
+#: src/MenuObjectPropDlg.cpp:384 src/MenuObjectPropDlg.cpp:543 src/MenuPropDlg.cpp:81
+#: src/VideoPropDlg.cpp:137
+msgid "Keep Aspect Ratio"
+msgstr "Behold Bildeformatet"
+
+#: src/MenuObjectPropDlg.cpp:387 src/MenuPropDlg.cpp:84
+msgid "X Min"
+msgstr "X Min"
+
+#: src/MenuObjectPropDlg.cpp:388 src/MenuPropDlg.cpp:85
+msgid "X Mid"
+msgstr "X Mid"
+
+#: src/MenuObjectPropDlg.cpp:389 src/MenuPropDlg.cpp:86
+msgid "X Max"
+msgstr "X Max"
+
+#: src/MenuObjectPropDlg.cpp:393 src/MenuPropDlg.cpp:90
+msgid "Y Min"
+msgstr "Y Min"
+
+#: src/MenuObjectPropDlg.cpp:394 src/MenuPropDlg.cpp:91
+msgid "Y Mid"
+msgstr "Y Mid"
+
+#: src/MenuObjectPropDlg.cpp:395 src/MenuPropDlg.cpp:92
+msgid "Y Max"
+msgstr "Y Max"
+
+#: src/MenuObjectPropDlg.cpp:399 src/MenuPropDlg.cpp:96
+msgid "Meet"
+msgstr "Møt"
+
+#: src/MenuObjectPropDlg.cpp:400 src/MenuPropDlg.cpp:97
+msgid "Slice"
+msgstr "Del"
+
+#: src/MenuObjectPropDlg.cpp:432 buttons/ellipse-v2.xml:23 buttons/ellipse45.xml:26 buttons/frame-v2.xml:18
+#: buttons/frame45.xml:21 buttons/movie.xml:26 objects/ellipse-v3.xml:22 objects/ellipse45.xml:24
+#: objects/frame-v3.xml:18 objects/frame45.xml:20 objects/gold-frame.xml:45 objects/image.xml:3
+#: objects/image.xml:9
+msgid "Image"
+msgstr "Bilde"
+
+#: src/MenuObjectPropDlg.cpp:440
+msgid "Video"
+msgstr "Video"
+
+#: src/MenuObjectPropDlg.cpp:495 src/SubtitlePropDlg.cpp:186
+msgid "Offset:"
+msgstr "Avstand:"
+
+#: src/MenuObjectPropDlg.cpp:503
+msgid "Deviation:"
+msgstr "Avvik:"
+
+#: src/MenuObjectPropDlg.cpp:518
+msgid "Location"
+msgstr "Lokasjon"
+
+#: src/MenuObjectPropDlg.cpp:521
+msgid "X:"
+msgstr "X:"
+
+#: src/MenuObjectPropDlg.cpp:522
+msgid "Y:"
+msgstr "Y:"
+
+#: src/MenuObjectPropDlg.cpp:528 buttons/arrow-blue.xml:26 buttons/arrow-cool.xml:17
+#: buttons/arrow-double.xml:13 buttons/arrow-gold.xml:26 buttons/arrow-green-double.xml:383
+#: buttons/arrow-green.xml:375 buttons/arrow-red.xml:29 buttons/arrow-simple-v2.xml:43
+#: buttons/arrow-star.xml:21 buttons/arrow.xml:42 buttons/arrow2.xml:25 buttons/arrow3.xml:19
+#: buttons/frame45.xml:35 objects/frame45.xml:34
+msgid "Rotation"
+msgstr "Rotasjon"
+
+#: src/MenuObjectPropDlg.cpp:530
+msgid "Angle:"
+msgstr "Vinkel"
+
+#: src/MenuObjectPropDlg.cpp:536
+msgid "Size"
+msgstr "Størrelse"
+
+#: src/MenuObjectPropDlg.cpp:538
+msgid "Width:"
+msgstr "Bredde:"
+
+#: src/MenuObjectPropDlg.cpp:540
+msgid "Height:"
+msgstr "Høyde:"
+
+#: src/MenuObjectPropDlg.cpp:555
+msgid "Animations..."
+msgstr "Animasjoner..."
+
+#: src/MenuObjectPropDlg.cpp:606
+msgid "start of current menu"
+msgstr "start av aktuell meny"
+
+#: src/MenuObjectPropDlg.cpp:691 src/MenuObjectPropDlg.cpp:695
+#, c-format
+msgid "chapter %d"
+msgstr "kapittel %d"
+
+#: src/MenuObjectPropDlg.cpp:862
+msgid "Please enter the action command."
+msgstr "Angi kommando."
+
+#: src/MenuPropDlg.cpp:52 src/TitlePropDlg.cpp:70 src/TitlesetManager.cpp:320
+msgid "Titleset"
+msgstr "Oppsett"
+
+#: src/MenuPropDlg.cpp:53 src/MenuPropDlg.cpp:201 src/TitlesetManager.cpp:331 src/TitlesetManager.cpp:1213
+#: buttons/pill.xml:26
+msgid "Menu"
+msgstr "Meny"
+
+#: src/MenuPropDlg.cpp:105 src/TitlePropDlg.cpp:100
+msgid "Video object"
+msgstr "Videoobjekt"
+
+#: src/MenuPropDlg.cpp:110 src/TitlePropDlg.cpp:191
+msgid "Format:"
+msgstr "Format:"
+
+#: src/MenuPropDlg.cpp:132
+msgid "Background:"
+msgstr "Bakgrunn:"
+
+#: src/MenuPropDlg.cpp:133
+msgid "Image and Video Files"
+msgstr "Bilde og Video Filer"
+
+#: src/MenuPropDlg.cpp:148 src/VobListBox.cpp:145
+msgid "Audio:"
+msgstr "Lyd:"
+
+#: src/MenuPropDlg.cpp:170
+msgid "Loop"
+msgstr "Løkke"
+
+#: src/MenuPropDlg.cpp:181
+msgid "Subpicture start/end:"
+msgstr "Underbildet start / slutt"
+
+#: src/MenuPropDlg.cpp:187
+msgid "Remember last selected button"
+msgstr "Husk sist valgte knapp"
+
+#: src/MenuPropDlg.cpp:206
+msgid "Entry"
+msgstr "Oppføring"
+
+#: src/MenuPropDlg.cpp:209
+msgid "Root"
+msgstr "Rot"
+
+#: src/MenuPropDlg.cpp:210
+msgid "Subtitle"
+msgstr "Undertittel"
+
+#: src/MenuPropDlg.cpp:213
+msgid "Angle"
+msgstr "Vinkel"
+
+#: src/MenuPropDlg.cpp:216 src/TitlePropDlg.cpp:71 src/TitlePropDlg.cpp:263 src/TitlesetManager.cpp:331
+msgid "Title"
+msgstr "Tittel"
+
+#: src/MenuPropDlg.cpp:220 src/TitlePropDlg.cpp:269
+msgid "Pre commands:"
+msgstr "Forehåndskommandoer:"
+
+#: src/MenuPropDlg.cpp:222 src/TitlePropDlg.cpp:271
+msgid "Post commands:"
+msgstr "Etterkommandoer:"
+
+#: src/MenuPropDlg.cpp:236
+msgid "Cells..."
+msgstr "Celler..."
+
+#: src/MenuPropDlg.cpp:237
+msgid "Actions..."
+msgstr "Handlinger..."
+
+#: src/MenuPropDlg.cpp:271
+msgid "Subpicture end must be greater than start or empty"
+msgstr "Underbildet-slutten må være større enn starte eller tom"
+
+#: src/MenuPropDlg.cpp:278 src/TitlePropDlg.cpp:320
+#, c-format
+msgid "File %s doesn't exist."
+msgstr "%s eksisterer ikke"
+
+#: src/MenuPropDlg.cpp:285 src/TitlePropDlg.cpp:327
+#, c-format
+msgid "File %s isn't audio file."
+msgstr "%s er ikke en lydfil"
+
+#: src/MenuPropDlg.cpp:304
+msgid "Post commands will not be executed if pause is set to -1"
+msgstr "Innleggskommandoene vil ikke bli utført dersom pause er satt til -1"
+
+#: src/MessageDlg.cpp:76
+msgid "&Don't show this message again"
+msgstr "&Ikke vis denne meldingen igjen"
+
+#: src/MPEG.cpp:17 src/MPEG.cpp:47
+#, c-format
+msgid "Can't open file %s"
+msgstr "Kan ikke åpne %s"
+
+#: src/NewProjectDlg.cpp:19
+msgid "Create a new DVD"
+msgstr "Lage en ny DVD"
+
+#: src/NewProjectDlg.cpp:34
+msgid "Disc label:"
+msgstr "Etikett:"
+
+#: src/NewProjectDlg.cpp:37
+msgid "Disc capacity:"
+msgstr "Diskplass:"
+
+#: src/NewProjectDlg.cpp:43
+msgid "Video bitrate:"
+msgstr "Video bitrate:"
+
+#: src/NewProjectDlg.cpp:46 src/NewProjectDlg.cpp:52 src/SettingsDlg.cpp:243 src/SettingsDlg.cpp:248
+#: src/SettingsDlg.cpp:252
+msgid "KBit/s"
+msgstr "KBit/s"
+
+#: src/NewProjectDlg.cpp:52
+msgid "Audio bitrate:"
+msgstr "bit-frekvens for lyd:"
+
+#: src/NewProjectDlg.cpp:63
+msgid "Video Format"
+msgstr "Videoformat"
+
+#: src/NewProjectDlg.cpp:72
+msgid "Aspect Ratio"
+msgstr "Bildeformat"
+
+#: src/NewProjectDlg.cpp:82
+msgid "Audio Format"
+msgstr "Lyd format"
+
+#: src/NewProjectDlg.cpp:91 src/SettingsDlg.cpp:131
+msgid "Default title post command:"
+msgstr "Standard tittel etterkommando:"
+
+#: src/NewProjectDlg.cpp:97
+msgid "Please enter the volume name."
+msgstr "Skriv inn volumnavnet."
+
+#: src/NewProjectDlg.cpp:101
+msgid "Volume name can only be a maximum of 32 characters."
+msgstr "Volumnavnet kan kun ha opp til 32 tegn."
+
+#: src/Pgc.cpp:255
+msgid "Can't load vob"
+msgstr "Kan ikke laste inn vob"
+
+#: src/ProcessBurn.cpp:60
+msgid "Burning"
+msgstr "Brenner"
+
+#: src/ProcessBurn.cpp:67 src/ProcessBurn.cpp:85
+#, c-format
+msgid "Please insert a blank or rewritable DVD into the device %s."
+msgstr "Sett en tom eller omskrivbar DVD inn i %s."
+
+#: src/ProcessBurn.cpp:69 src/ProcessBurn.cpp:87 src/ProcessBurn.cpp:129 src/ProcessFormatDvd.cpp:45
+#: src/ProcessPreview.cpp:88 src/ProgressDlg.cpp:291
+msgid "Aborted"
+msgstr "Avbrutt"
+
+#: src/ProcessBurn.cpp:127
+#, c-format
+msgid "Size of Disc Image > %.2f GB. Do you want to continue?"
+msgstr "Størrelsen på Disk-bildet > %.2f GB.  Vil du fortsette?"
+
+#: src/ProcessCleanTemp.cpp:72
+msgid "Cleaning temporary directory"
+msgstr "Rydder i midlertidig mappe"
+
+#: src/ProcessCleanTemp.cpp:74 src/ProcessCleanTemp.cpp:85
+#, c-format
+msgid "Cannot remove directory '%s'"
+msgstr "Kan ikke fjerne mappe '%s'"
+
+#: src/ProcessDvdFilesystem.cpp:80
+msgid "Generating DVD"
+msgstr "Genererer DVD"
+
+#: src/ProcessEccData.cpp:26
+msgid "Adding ECC data"
+msgstr "Legger til ECC data"
+
+#: src/ProcessEncode.cpp:39 src/ProcessSubtitles.cpp:32
+#, c-format
+msgid "Found transcoded file in cache for '%s'"
+msgstr "Fant en om-kodet fil i hurtigminnet for '%s'"
+
+#: src/ProcessEncode.cpp:78
+#, fuzzy, c-format
+msgid "Transcode video %u of %lu"
+msgstr "Om-kode video fil: "
+
+#: src/ProcessFormatDvd.cpp:33
+msgid "Formatting DVD-RW"
+msgstr "Formaterer DVD-RW"
+
+#: src/ProcessFormatDvd.cpp:43
+#, c-format
+msgid "Please insert a rewritable DVD into the device %s."
+msgstr "Sett en omskrivbar DVD inn i %s."
+
+#: src/ProcessFormatDvd.cpp:53
+msgid "Formatting DVD-RW failed. Try again?"
+msgstr "Formatering av DVD-RW mislykkes. Prøve igjen?"
+
+#: src/ProcessFormatDvd.cpp:58
+msgid "-> skipped <-"
+msgstr "-> hoppet over <-"
+
+#: src/ProcessIsoImage.cpp:54
+msgid "There is not enough space to store ISO: cache emptying."
+msgstr "Ikke tilstrekkelig plass for å lagre ISO: hurtigminnet tømmes."
+
+#: src/ProcessIsoImage.cpp:57
+msgid "Creating ISO image"
+msgstr "Lager ISO-bilde"
+
+#: src/ProcessMenu.cpp:67
+#, c-format
+msgid "Generating menu %u of %lu"
+msgstr "Genererer meny %u av %lu"
+
+#: src/ProcessMenu.cpp:118
+msgid "Create menu MPEG"
+msgstr "Opprette meny MPEG"
+
+#: src/ProcessMenu.cpp:149 src/ProcessMenu.cpp:173 src/ProcessMenu.cpp:187 src/ProcessMenu.cpp:248
+#: src/ProcessMenu.cpp:278 src/ProcessMenu.cpp:292
+msgid "Error creation of menu"
+msgstr "Oppretting av meny feilet"
+
+#: src/ProcessMenu.cpp:155
+#, c-format
+msgid "Video duration: %f sec"
+msgstr "Video varighet: %f sek."
+
+#: src/ProcessMenu.cpp:163 src/ProcessMenuTransitions.cpp:250
+#, c-format
+msgid "Encoding frame %d of %d"
+msgstr "Koder bilde %d av %d"
+
+#: src/ProcessMenu.cpp:200
+msgid "Transcode audio from"
+msgstr "Om-kode lyd fra"
+
+#: src/ProcessMenu.cpp:210 src/ProcessMenu.cpp:216 src/ProcessMenuTransitions.cpp:125
+#: src/ProcessMenuTransitions.cpp:135 src/ProcessSlideshow.cpp:198 src/ProcessTranscode.cpp:153
+#: src/ProcessTranscode.cpp:164 src/ProcessTranscode.cpp:189 src/ProcessTranscode.cpp:201
+msgid "Error transcoding of "
+msgstr "Feil ved om-koding av "
+
+#: src/ProcessMenu.cpp:221 src/ProcessMenu.cpp:301 src/ProcessSlideshow.cpp:203
+msgid "Multiplexing audio and video"
+msgstr "Multipleksing lyd og video"
+
+#: src/ProcessMenu.cpp:260
+#, c-format
+msgid "Audio duration: %f sec"
+msgstr "Lyd-varighet: %f s"
+
+#: src/ProcessMenu.cpp:274 src/SettingsDlg.cpp:237
+msgid "Frame count of menu:"
+msgstr "Antall rammer for meny:"
+
+#: src/ProcessMenu.cpp:326
+msgid "Multiplexing subpictures into mpeg"
+msgstr "Multipleksing underbilder til mpeg"
+
+#: src/ProcessMenu.cpp:333
+#, c-format
+msgid "Can't rename file '%s' in '%s'"
+msgstr "Kan ikke omdøpe fil '%s' i '%s'"
+
+#: src/ProcessMenuTransitions.cpp:103 src/ProcessMenuTransitions.cpp:160 src/ProcessMenuTransitions.cpp:241
+#: src/ProcessMenuTransitions.cpp:253
+msgid "Error creation of transition"
+msgstr "Feil ved oppretting av overgang"
+
+#: src/ProcessMenuTransitions.cpp:178
+#, c-format
+msgid "Generate transition from %s"
+msgstr "Generere overgang fra %s"
+
+#: src/ProcessPreview.cpp:36
+msgid "Start preview"
+msgstr "Start forhåndsvisning"
+
+#: src/ProcessPreview.cpp:42 src/ProcessPreview.cpp:58 src/ProcessPreview.cpp:79
+#, fuzzy
+msgid ""
+"Starting of selected DVD player is failed. Please open the following directory with your favorite DVD "
+"player: "
+msgstr ""
+"Oppstart av dvd-spiller mislykket. Kontroller banen til dvd-spilleren i 'Innstillinger/Kjerne/"
+"Forhåndsvisning-kommando', eller åpn mappen med din dvd-spiller: "
+
+#: src/ProcessPreview.cpp:49
+msgid ""
+"VLC player is not found. Please install VLC player (http://www.videolan.org) in Applications directory or "
+"open the following directory with your favorite DVD player: "
+msgstr ""
+"VLC player er ikke funnet. Vennligst installer VLC player (http://www.videolan.org) i Programmer-katalogen, "
+"eller åpne følgende katalog med din favoritt DVD-spiller: "
+
+#: src/ProcessPreview.cpp:86
+msgid "Do you want to burn this video to DVD?"
+msgstr "Vil du brenne denne videoen til DVD?"
+
+#: src/ProcessPreview.cpp:86
+msgid "Do you want to create an iso image of this video?"
+msgstr "Vil du lage et iso-bilde av denne videoen?"
+
+#: src/ProcessSlideshow.cpp:59
+#, c-format
+msgid "Generating slideshow %u of %lu"
+msgstr "Genererer lysbildevisning %u av %lu"
+
+#: src/ProcessSlideshow.cpp:102 src/ProcessSlideshow.cpp:130 src/ProcessSlideshow.cpp:153
+msgid "Error creation of slideshow"
+msgstr "Generering av lysbildevisning feilet"
+
+#: src/ProcessSlideshow.cpp:121
+#, c-format
+msgid "Converting slide %u image to video"
+msgstr "Konverterer bilde %u til video"
+
+#: src/ProcessSlideshow.cpp:172
+msgid "Audio file duration: "
+msgstr "Lydfil varighet: "
+
+#: src/ProcessSlideshow.cpp:178
+msgid "Concat audio files"
+msgstr "Lenk sammen lydfiler"
+
+#: src/ProcessSlideshow.cpp:232
+msgid "Error loading transition definition"
+msgstr "Feil ved lasting av overgangen definisjon"
+
+#: src/ProcessSubtitles.cpp:58
+#, c-format
+msgid "Multiplexing subtitles %u of %lu"
+msgstr "Multipleksing undertitler %u av %lu"
+
+#: src/ProcessSubtitles.cpp:93
+#, c-format
+msgid "Can't rename temporary file '%s'"
+msgstr "Kan ikke døpe om midlertidig fil '%s'"
+
+#: src/ProcessTranscode.cpp:23
+msgid "Transcode video file: "
+msgstr "Om-kode video fil: "
+
+#: src/ProcessTranscode.cpp:224
+msgid "Multiplexing video and audio streams"
+msgstr "Multipleksere video- og lyd-strømmer"
+
+#: src/ProcessTranscode.cpp:244
+#, c-format
+msgid "Analysis of audio track %d"
+msgstr "Analyse av lydspor %d"
+
+#: src/ProcessTranscode.cpp:248 src/ProcessTranscode.cpp:262 wxVillaLib/ProgramProcess.cpp:84
+#, c-format
+msgid "Execution of '%s' failed."
+msgstr "Utføring av '% s' feilet."
+
+#: src/ProgressDlg.cpp:75
+msgid "Generate DVD"
+msgstr "Generer DVD"
+
+#: src/ProgressDlg.cpp:79
+msgid "Summary:"
+msgstr "Sammendrag:"
+
+#: src/ProgressDlg.cpp:85
+msgid "Details:"
+msgstr "Detaljer:"
+
+#: src/ProgressDlg.cpp:91
+msgid "Hide details"
+msgstr "Skjul detaljer"
+
+#: src/ProgressDlg.cpp:93
+msgid "Turn off PC when finished"
+msgstr "Slå av PC når utført"
+
+#: src/ProgressDlg.cpp:97
+msgid "Minimize"
+msgstr "Minimer"
+
+#: src/ProgressDlg.cpp:99 buttons/cancel.xml:3 buttons/cancel2.xml:4
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: src/ProgressDlg.cpp:147
+msgid "Show details"
+msgstr "Vis detaljer"
+
+#: src/ProgressDlg.cpp:228 src/ProgressDlg.cpp:232
+#, fuzzy
+msgid "Encoding Mode"
+msgstr "Koder bilde %d av %d"
+
+#: src/ProgressDlg.cpp:274 wxVillaLib/ProgramProcess.cpp:30
+msgid "Failed"
+msgstr "Mislykket"
+
+#: src/ProgressDlg.cpp:281
+msgid "Close"
+msgstr "Lukk"
+
+#: src/ProgressDlg.cpp:360
+msgid "Prepare"
+msgstr "Forbered"
+
+#: src/ProgressDlg.cpp:368
+msgid "Search for transcoded files in cache"
+msgstr "Søk for om-kodete filer i hurtigminnet"
+
+#: src/ProgressDlg.cpp:413
+msgid "Burning was successful."
+msgstr "Brenning utført uten feil."
+
+#: src/ProgressDlg.cpp:415
+msgid "Generating was successful."
+msgstr "Generering utført uten feil."
+
+#: src/SettingsDlg.cpp:40 src/SettingsDlg.cpp:406 src/SettingsDlg.cpp:412
+msgid "Settings"
+msgstr "Innstillinger"
+
+#: src/SettingsDlg.cpp:58
+msgid "Interface"
+msgstr "Grensesnitt"
+
+#: src/SettingsDlg.cpp:73
+msgid "Default disc label:"
+msgstr "Standard disk-etikett:"
+
+#: src/SettingsDlg.cpp:75
+msgid "Default disc capacity:"
+msgstr "Standard disk-kapasitet:"
+
+#: src/SettingsDlg.cpp:79
+msgid "Default video format:"
+msgstr "Standard videoformat:"
+
+#: src/SettingsDlg.cpp:97
+msgid "Keep aspect ratio"
+msgstr "Behold aspektforholdet"
+
+#: src/SettingsDlg.cpp:101
+msgid "Default audio format:"
+msgstr "Standard lyd-format:"
+
+#: src/SettingsDlg.cpp:124
+msgid "Default chapter length:"
+msgstr "Standard kapittel-lengde:"
+
+#: src/SettingsDlg.cpp:127
+msgid "Add chapter at title end"
+msgstr "Legg til kapittel i tittelslutt"
+
+#: src/SettingsDlg.cpp:154
+msgid "Default button:"
+msgstr "Standardknapp:"
+
+#: src/SettingsDlg.cpp:159
+msgid "Accept invalid actions"
+msgstr "Godta ugyldig handling"
+
+#: src/SettingsDlg.cpp:162
+msgid "Default slide duration:"
+msgstr "Standard visningstid for lysbilde:"
+
+#: src/SettingsDlg.cpp:163
+msgid "Default transition duration:"
+msgstr "Standard overføringstid:"
+
+#: src/SettingsDlg.cpp:170
+msgid "Default slide transition:"
+msgstr "Standard lysbildeovergang:"
+
+#: src/SettingsDlg.cpp:176
+msgid "Last directory"
+msgstr "Siste mappe"
+
+#: src/SettingsDlg.cpp:177
+msgid "File Browser start directory:"
+msgstr "Startmappe:"
+
+#: src/SettingsDlg.cpp:192
+msgid "Clear thumbnail cache after exit"
+msgstr "Tøm oversiktsbuffer etter avslutting"
+
+#: src/SettingsDlg.cpp:196
+msgid "Undo history size:"
+msgstr "Angre størrelse på historie:"
+
+#: src/SettingsDlg.cpp:197
+msgid "Clear transcoding cache:"
+msgstr "Tømm omkodings-hurtigminnet"
+
+#: src/SettingsDlg.cpp:200
+msgid "Prompt"
+msgstr "Prompt"
+
+#: src/SettingsDlg.cpp:201 src/SettingsDlg.cpp:299
+msgid "Yes"
+msgstr "Ja"
+
+#: src/SettingsDlg.cpp:206
+msgid "Clear cache now"
+msgstr "Tøm buffer nå"
+
+#: src/SettingsDlg.cpp:210
+msgid "\"Don't show again\" flags:"
+msgstr "Flagg for: \"Ikke vis igjen\""
+
+#: src/SettingsDlg.cpp:212
+msgid "Reset All"
+msgstr "Tilbakestill alt"
+
+#: src/SettingsDlg.cpp:221
+msgid "Core"
+msgstr "Kjerne"
+
+#: src/SettingsDlg.cpp:240
+msgid "Draw buttons on background"
+msgstr "Lag knappene på bakgrunnen"
+
+#: src/SettingsDlg.cpp:242
+msgid "Menu video bitrate:"
+msgstr "Meny for video bit-frekvens:"
+
+#: src/SettingsDlg.cpp:247
+msgid "Slideshow video bitrate:"
+msgstr "Video bit-frekvens for lysbildevisning:"
+
+#: src/SettingsDlg.cpp:252
+msgid "Default audio bitrate:"
+msgstr "Standard audio bitrate:"
+
+#: src/SettingsDlg.cpp:253
+msgid "Thread count:"
+msgstr "Trådantall:"
+
+#: src/SettingsDlg.cpp:254
+msgid "DVD reserved space:"
+msgstr "Reservert DVD-plass:"
+
+#: src/SettingsDlg.cpp:254
+msgid "KB"
+msgstr "KB"
+
+#: src/SettingsDlg.cpp:258
+msgid "internal"
+msgstr "intern"
+
+#: src/SettingsDlg.cpp:263
+msgid "Encoder:"
+msgstr "Koder"
+
+#: src/SettingsDlg.cpp:273
+msgid "CBR"
+msgstr "CBR"
+
+#: src/SettingsDlg.cpp:274
+msgid "1-pass VBR"
+msgstr "1-pass VBR"
+
+#: src/SettingsDlg.cpp:275
+msgid "2-pass VBR"
+msgstr "2-pass VBR"
+
+#: src/SettingsDlg.cpp:290
+msgid "Create ISO command:"
+msgstr "Kommando for å lage ISO-bilde:"
+
+#: src/SettingsDlg.cpp:291
+msgid "Burn command:"
+msgstr "Kommando for brenning:"
+
+#: src/SettingsDlg.cpp:292
+msgid "Burn ISO command:"
+msgstr "Kommando for brenning av ISO-bilde:"
+
+#: src/SettingsDlg.cpp:293
+msgid "Add ECC command:"
+msgstr "Kommando for å legge til ECC:"
+
+#: src/SettingsDlg.cpp:294
+msgid "Format command:"
+msgstr "Kommando for formatering:"
+
+#: src/SettingsDlg.cpp:296
+msgid "Use mplex:"
+msgstr "Bruk mplex:"
+
+#: src/SettingsDlg.cpp:301
+msgid "For menus only"
+msgstr "Kun for menyer"
+
+#: src/SettingsDlg.cpp:306
+msgid "NTSC film:"
+msgstr "NTSC film:"
+
+#: src/SettingsDlg.cpp:307
+msgid "reencode by default"
+msgstr "rekode som standard"
+
+#: src/SettingsDlg.cpp:309
+msgid "Debug"
+msgstr "Feilsøking"
+
+#: src/SettingsDlg.cpp:310
+msgid "Don't remove temp files"
+msgstr "Ikke fjern midlertidige filer"
+
+#: src/SettingsDlg.cpp:333
+msgid "Language change will not take effect until DVDStyler is restarted"
+msgstr "Språkinnstilling vil ikke ha effekt før DVDStyler startes på nytt"
+
+#: src/SettingsDlg.cpp:406
+msgid "All \"don't show again\" flags are reseted."
+msgstr "Alle \"ikke vis igjen\" flaggene er tilbakestilt."
+
+#: src/SettingsDlg.cpp:412
+msgid "The transcoding cache is successfully cleared."
+msgstr "Hurtigbufferen for kodingen er tømt."
+
+#: src/SlideDlg.cpp:44
+msgid "Slide properties"
+msgstr "Egenskaper for lysbilde"
+
+#: src/SlideDlg.cpp:48
+msgid "File name:"
+msgstr "Filnavn:"
+
+#: src/SlideDlg.cpp:53 src/TitlePropDlg.cpp:207
+msgid "Transition:"
+msgstr "Overgang:"
+
+#: src/SlideDlg.cpp:72
+msgid "Default"
+msgstr "Standar"
+
+#: src/Slideshow.cpp:243
+msgid "None"
+msgstr "Ingen"
+
+#: src/Slideshow.cpp:244
+msgid "Random"
+msgstr "Vilkårlig"
+
+#: src/StatusBar.cpp:60
+#, c-format
+msgid "%d/%d Minutes"
+msgstr "%d/%d Minutter"
+
+#: src/StatusBar.cpp:62
+#, c-format
+msgid "%d Minutes"
+msgstr "%d Minutter"
+
+#: src/StatusBar.cpp:65
+#, c-format
+msgid "%d Mb/s"
+msgstr "%d Mb/s"
+
+#: src/StatusBar.cpp:66
+#, c-format
+msgid "%.1f Mb/s"
+msgstr "%.1f Mb/s"
+
+#: src/Stream.cpp:100
+msgid "mono"
+msgstr "mono"
+
+#: src/Stream.cpp:106
+#, c-format
+msgid "%d channels"
+msgstr "%d kanaler"
+
+#: src/Stream.cpp:109
+#, c-format
+msgid "%d Hz"
+msgstr "%d Hz"
+
+#: src/SubtitlePropDlg.cpp:102
+msgid "Subtitle Properties"
+msgstr "Egenskaper Undertittel"
+
+#: src/SubtitlePropDlg.cpp:112
+msgid "Force display"
+msgstr "Tvungen visning"
+
+#: src/SubtitlePropDlg.cpp:116
+msgid "Charset:"
+msgstr "Tegnsett:"
+
+#: src/SubtitlePropDlg.cpp:120
+msgid "Font:"
+msgstr "Skrifttype:"
+
+#: src/SubtitlePropDlg.cpp:137
+msgid "Preview:"
+msgstr "Forhåndsvisning:"
+
+#: src/SubtitlePropDlg.cpp:139
+msgid "ABCabcXYZxyz"
+msgstr "ABCabcXYZxyz"
+
+#: src/SubtitlePropDlg.cpp:143
+msgid "Fill:"
+msgstr "Fyll:"
+
+#: src/SubtitlePropDlg.cpp:153 src/SubtitlePropDlg.cpp:167 src/SubtitlePropDlg.cpp:184
+msgid "%"
+msgstr "%"
+
+#: src/SubtitlePropDlg.cpp:156
+msgid "Outline:"
+msgstr "Omriss:"
+
+#: src/SubtitlePropDlg.cpp:169
+msgid "Thickness:"
+msgstr "Tykkelse:"
+
+#: src/SubtitlePropDlg.cpp:174
+msgid "Shadow:"
+msgstr "Skygge:"
+
+#: src/SubtitlePropDlg.cpp:197
+msgid "Alignment"
+msgstr "Justering"
+
+#: src/SubtitlePropDlg.cpp:218
+msgid "Margin"
+msgstr "Margin"
+
+#: src/SubtitlePropDlg.cpp:242
+msgid "&Use as defaults"
+msgstr "&Bruk som standar"
+
+#: src/SubtitlePropDlg.cpp:385
+msgid "slant"
+msgstr "på skrå"
+
+#: src/SubtitlePropDlg.cpp:387
+msgid "italic"
+msgstr "kursiv"
+
+#: src/SubtitlePropDlg.cpp:392
+msgid "light"
+msgstr "lys"
+
+#: src/SubtitlePropDlg.cpp:394
+msgid "bold"
+msgstr "fet"
+
+#: src/SysUtils.cpp:303
+msgid "Scan devices"
+msgstr "Søke gjennom enhetene"
+
+#: src/TemplateDlg.cpp:56
+msgid "Select template for DVD menus"
+msgstr "Velg mal for DVD menyer"
+
+#: src/TemplateDlg.cpp:61
+msgid "Caption:"
+msgstr "Bildetekst:"
+
+#: src/TemplateDlg.cpp:63
+msgid "Disc Title"
+msgstr "Disk Tittel"
+
+#: src/TemplateDlg.cpp:69
+msgid "Title selection"
+msgstr "Tittelvalg"
+
+#: src/TemplateDlg.cpp:71
+msgid "Chapter selection"
+msgstr "Kapitlvalg"
+
+#: src/TemplateDlg.cpp:77
+msgid "Category"
+msgstr "Kategori"
+
+#: src/TemplateDlg.cpp:80
+msgid "All"
+msgstr "Alt"
+
+#: src/TemplateDlg.cpp:92
+msgid "&No template"
+msgstr "&Ingen mal"
+
+#: src/TemplateDlg.cpp:105
+msgid "Templates"
+msgstr "Maler"
+
+#: src/TemplateDlg.cpp:115 templates/category.xml:5
+msgid "Christmas & New Year's Eve"
+msgstr "Jul og Nyttårs aften"
+
+#: src/TitlePropDlg.cpp:118
+msgid "Add file..."
+msgstr "Legg til fil..."
+
+#: src/TitlePropDlg.cpp:122
+msgid "Remove file"
+msgstr "Fjern fil"
+
+#: src/TitlePropDlg.cpp:126 src/TitlePropDlg.cpp:183
+msgid "Properties..."
+msgstr "Egenskaper..."
+
+#: src/TitlePropDlg.cpp:134
+msgid "do not remultiplex/transcode"
+msgstr "ikke om-kod/multipleks"
+
+#: src/TitlePropDlg.cpp:159
+msgid "Slideshow"
+msgstr "Lysbildevisning"
+
+#: src/TitlePropDlg.cpp:175
+msgid "Add image..."
+msgstr "Legg til bilde..."
+
+#: src/TitlePropDlg.cpp:179
+msgid "Remove image"
+msgstr "Fjern bilde"
+
+#: src/TitlePropDlg.cpp:233
+msgid "Audio file:"
+msgstr "Lyd fil:"
+
+#: src/TitlePropDlg.cpp:267
+msgid "Palette:"
+msgstr "Palett:"
+
+#: src/TitlePropDlg.cpp:354 src/TitlePropDlg.cpp:521
+#, c-format
+msgid "Invalid chapter timestamp '%s'"
+msgstr "Ugyldig tidsstempel på kapittel '%s'"
+
+#: src/TitlePropDlg.cpp:440
+msgid "Audio & Subtitle Files"
+msgstr "Lyd og undertittel filer"
+
+#: src/Titleset.cpp:302 src/Titleset.cpp:367
+msgid "Can't load pgc"
+msgstr "Kan ikke laste inn pgc"
+
+#: src/Titleset.cpp:419
+msgid "Can't load menus"
+msgstr "Kan ikke laste inn menyer"
+
+#: src/Titleset.cpp:424
+msgid "Can't load titles"
+msgstr "Kan ikke laste inn titler"
+
+#: src/TitlesetManager.cpp:151 src/TitlesetManager.cpp:172
+msgid "&VMGM Menu"
+msgstr "&VMGM Meny"
+
+#: src/TitlesetManager.cpp:163
+msgid "&Left"
+msgstr "&Venstre"
+
+#: src/TitlesetManager.cpp:164
+msgid "&Right"
+msgstr "&Høyre"
+
+#: src/TitlesetManager.cpp:177
+msgid "&Move"
+msgstr "&Flytt"
+
+#: src/TitlesetManager.cpp:359
+msgid "Drag your video files from the File Browser to here."
+msgstr "Dra videofilene hit fra fil nettleser"
+
+#: src/TitlesetManager.cpp:410
+#, c-format
+msgid "Slideshow (%d images)"
+msgstr "Lysbildevisning (%d bilder)"
+
+#: src/TitlesetManager.cpp:412
+msgid "Slideshow (1 image)"
+msgstr "Lysbildevisning (1 bilde)"
+
+#: src/TitlesetManager.cpp:466
+msgid ""
+"The selected video files don't fit on DVD without re-encoding.\n"
+"Do you want to enable re-encoding?"
+msgstr ""
+"Valgt video fil er for stor for DVD uten re-koding.\n"
+"Vil du aktivere re-koding?"
+
+#: src/TitlesetManager.cpp:488
+#, c-format
+msgid ""
+"Adding file %s.\n"
+"Please wait..."
+msgstr ""
+"Legger til fil %s.\n"
+"Vennligst vent..."
+
+#: src/TitlesetManager.cpp:503
+#, c-format
+msgid "File '%s' doesn't contain any audio or video streams."
+msgstr "Fil '%s' inneholder ingen lyd eller video streamer."
+
+#: src/TitlesetManager.cpp:572
+msgid "This file contains video in PAL format. Do you want to change DVD format to PAL too?"
+msgstr "Denne filen inneholder video i PAL format. Vil du forandre DVD formatet til PAL også?"
+
+#: src/TitlesetManager.cpp:576
+msgid "This file contains video in NTSC format. Do you want to change DVD format to NTSC too?"
+msgstr "Denne filen inneholder video i NTSC format. Vil du forandre DVD formatet til NTSC også?"
+
+#: src/TitlesetManager.cpp:582
+msgid "Maximal 99 titles are allowed for one titleset."
+msgstr "Maksimalt 99 titler er tillatt for et titteloppsett."
+
+#: src/TitlesetManager.cpp:705
+msgid ""
+"The video bitrate is reduced below 2 Mb/s to fit your video on DVD. This can produce DVD with bad video "
+"quality."
+msgstr ""
+"For å få plass på DVD'en, er bit-frekvensen redusert til under 2 Mb/s. Dette kan medføre dårlig kvalitet på "
+"videoen."
+
+#: src/TitlesetManager.cpp:718 src/TitlesetManager.cpp:755
+msgid "Please add a video track first."
+msgstr "Legg inn video-sporet først."
+
+#: src/TitlesetManager.cpp:880
+msgid "Maximal 99 menus are allowed for one titleset."
+msgstr "Maksimalt 99 menyer er tillatt for et titteloppsett."
+
+#: src/TitlesetManager.cpp:1217
+#, c-format
+msgid "Do you really want to delete %s?"
+msgstr "Sikker på at du vil slette %s?"
+
+#: src/TitlesetManager.cpp:1218
+msgid "Titleset Manager"
+msgstr "Titteloppsett"
+
+#: src/VideoFrameDlg.cpp:52
+msgid "Video frame"
+msgstr "Video bilde"
+
+#: src/VideoPropDlg.cpp:101
+msgid "Video properties"
+msgstr "Egenskaper for video"
+
+#: src/VideoPropDlg.cpp:127
+msgid "progressive"
+msgstr "progressiv"
+
+#: src/VideoPropDlg.cpp:128
+msgid "interlace"
+msgstr "interlace"
+
+#: src/VideoPropDlg.cpp:132
+msgid "BFF"
+msgstr "BFF"
+
+#: src/VideoPropDlg.cpp:133
+msgid "TFF"
+msgstr "TFF"
+
+#: src/VideoPropDlg.cpp:141
+msgid "border"
+msgstr "ramme"
+
+#: src/VideoPropDlg.cpp:142
+msgid "crop"
+msgstr "beskjær"
+
+#: src/VideoPropDlg.cpp:146
+msgid "Border"
+msgstr "Ramme"
+
+#: src/VideoPropDlg.cpp:162
+msgid "Crop"
+msgstr "Beskjær"
+
+#: src/VideoPropDlg.cpp:179
+msgid "Fade-In/Out:"
+msgstr "Fade-inn/ut:"
+
+#: src/VideoPropDlg.cpp:218
+msgid "Start:"
+msgstr "Start:"
+
+#: src/VideoPropDlg.cpp:232
+msgid "Cut beginning"
+msgstr "Kutt starten"
+
+#: src/VideoPropDlg.cpp:248
+msgid "Cut ending"
+msgstr "Kutt slutten"
+
+#: src/VideoPropDlg.cpp:675 src/VideoPropDlg.cpp:680
+msgid "Invalid time"
+msgstr "Ugyldig tid"
+
+#: src/VobListBox.cpp:131
+msgid "Video:"
+msgstr "Video:"
+
+#: src/VobListBox.cpp:171 src/VobListBox.cpp:217
+msgid "Subtitle:"
+msgstr "Undertittel:"
+
+#: src/WelcomeDlg.cpp:46
+msgid "Welcome"
+msgstr "Velkommen"
+
+#: src/WelcomeDlg.cpp:52
+msgid "New project"
+msgstr "Nytt prosjekt"
+
+#: src/WelcomeDlg.cpp:57
+msgid "Create a new project"
+msgstr "Opprette et nytt prosjekt"
+
+#: src/WelcomeDlg.cpp:64
+msgid "Open project"
+msgstr "Åpne prosjekt"
+
+#: src/WelcomeDlg.cpp:69
+msgid "Open an existing project file"
+msgstr "Åpne en eksisterende prosjekt fil"
+
+#: src/WelcomeDlg.cpp:82
+msgid "Browse files..."
+msgstr "Bla gjennom filer..."
+
+#: wxVillaLib/imagjpg.cpp:255
+msgid "JPEG: Couldn't load - file is probably corrupted."
+msgstr "JPEG: Kunne ikke laste inn - filen er kanskje ødelagt."
+
+#: wxVillaLib/imagjpg.cpp:427
+msgid "JPEG: Couldn't save image."
+msgstr "JPEG: Kunne ikke lagre bilde."
+
+#: wxVillaLib/imagjpg.cpp:512
+msgid "No handler found for image type."
+msgstr "Bildetype er ikke støttet."
+
+#: wxVillaLib/imagjpg.cpp:519
+#, c-format
+msgid "No image handler for type %d defined."
+msgstr "Støtte for bildetypen %d er ikke definert."
+
+#: wxVillaLib/imagjpg.cpp:537
+#, c-format
+msgid "Can't load image from file '%s': file does not exist."
+msgstr "Kan ikke laste bilde fra '%s': filen eksisterer ikke."
+
+#: wxVillaLib/PropDlg.cpp:202
+msgid "&Don't show this dialog again"
+msgstr "&Ikke vis denne dialogen igjen"
+
+#: buttons/arrow-blue.xml:4
+msgid "Blue Arrow"
+msgstr "Blå pil"
+
+#: buttons/arrow-blue.xml:33 buttons/arrow3.xml:26
+msgid "Colour of the circle"
+msgstr "Farge på sirkel"
+
+#: buttons/arrow-blue.xml:40 buttons/arrow-red.xml:43 buttons/arrow-simple-v2.xml:19
+#: buttons/arrow-text-left.xml:32 buttons/arrow-text-right.xml:33 buttons/arrow3d-left.xml:29
+#: buttons/arrow3d-right.xml:29
+msgid "Stroke color"
+msgstr "Linjefarge"
+
+#: buttons/arrow-blue.xml:47 buttons/arrow-cool.xml:38 buttons/arrow-gold.xml:33
+#: buttons/arrow-mirror-left.xml:19 buttons/arrow-mirror-right.xml:19 buttons/arrow-red.xml:50
+#: buttons/arrow-simple-v2.xml:31 buttons/arrow-text-left.xml:25 buttons/arrow-text-right.xml:26
+msgid "Arrow color"
+msgstr "Pilfarge"
+
+#: buttons/arrow-cool.xml:4
+msgid "Cool Arrow"
+msgstr "Kul pil"
+
+#: buttons/arrow-cool.xml:24
+msgid "Color 1"
+msgstr "Farge 1"
+
+#: buttons/arrow-cool.xml:31
+msgid "Color 2"
+msgstr "Farge 2"
+
+#: buttons/arrow-double.xml:4
+msgid "Double Arrow"
+msgstr "Dubbel pil"
+
+#: buttons/arrow-double.xml:20
+msgid "Arrow color 1"
+msgstr "Pilfarge 1"
+
+#: buttons/arrow-double.xml:32
+msgid "Arrow color 2"
+msgstr "Pilfarge 2"
+
+#: buttons/arrow-gold.xml:4
+msgid "Golden Arrow"
+msgstr "Gylden pil"
+
+#: buttons/arrow-green-double.xml:4
+msgid "Green Arrow Double"
+msgstr "Grønn dubbelpil"
+
+#: buttons/arrow-green-double.xml:390
+msgid "Arrow 1 colour"
+msgstr "Farge på pil 1"
+
+#: buttons/arrow-green-double.xml:402
+msgid "Arrow 2 colour"
+msgstr "Farge på pil 2"
+
+#: buttons/arrow-green.xml:4
+msgid "Green Arrow"
+msgstr "Grønn pil"
+
+#: buttons/arrow-green.xml:382 buttons/arrow.xml:11 buttons/arrow2.xml:60 buttons/arrow3.xml:40
+msgid "Arrow colour"
+msgstr "Farge på pil"
+
+#: buttons/arrow-mirror-left.xml:4
+msgid "Arrow Mirror Left"
+msgstr "Speilvendt venstre pil"
+
+#: buttons/arrow-mirror-left.xml:31 buttons/arrow-mirror-right.xml:31
+msgid "Reflection color 1"
+msgstr "Refekssjonsfarge 1"
+
+#: buttons/arrow-mirror-left.xml:38 buttons/arrow-mirror-right.xml:43
+msgid "Reflection color 2"
+msgstr "Refekssjonsfarge 2"
+
+#: buttons/arrow-mirror-right.xml:4
+msgid "Arrow Mirror Right"
+msgstr "Speilvendt høyre pil"
+
+#: buttons/arrow-red.xml:4
+msgid "Red Arrow"
+msgstr "Rød pil"
+
+#: buttons/arrow-red.xml:36 buttons/pill3.xml:22
+msgid "Button color"
+msgstr "Farge på knapp"
+
+#: buttons/arrow-simple-v2.xml:4
+msgid "Simple Arrow"
+msgstr "Enkel pil"
+
+#: buttons/arrow-simple-v2.xml:50 buttons/arrow3d-left.xml:41 buttons/arrow3d-right.xml:41
+#: buttons/ellipse-v2.xml:44 buttons/ellipse45.xml:47 buttons/frame-v2.xml:53 buttons/frame45.xml:63
+#: buttons/home-v2.xml:35 buttons/text-circle-v2.xml:32 buttons/text-square-v2.xml:33
+#: buttons/text-underlined-v3.xml:32 buttons/text-v3.xml:58 objects/ellipse-v3.xml:57
+#: objects/ellipse45.xml:59 objects/frame-v3.xml:67 objects/frame45.xml:76 objects/rectangle-v2.xml:38
+#: objects/text-v2.xml:53
+msgid "Shadow"
+msgstr "Skygge"
+
+#: buttons/arrow-star.xml:3
+msgid "Star Arrow"
+msgstr "Stjerne-pil"
+
+#: buttons/arrow-star.xml:28
+msgid "Colour of the star"
+msgstr "Farge på stjerne"
+
+#: buttons/arrow-star.xml:35
+msgid "Colour of the triangle"
+msgstr "Farge på triangel"
+
+#: buttons/arrow-text-left.xml:4
+msgid "Text Arrow Left"
+msgstr "Venstre tekstpil"
+
+#: buttons/arrow-text-left.xml:18 buttons/arrow-text-right.xml:19 buttons/pill2.xml:42 buttons/pill3.xml:35
+msgid "Text color"
+msgstr "Tekstfarge"
+
+#: buttons/arrow-text-right.xml:4
+msgid "Text Arrow Right"
+msgstr "Høyre tekstpil"
+
+#: buttons/arrow.xml:3
+msgid "Arrow"
+msgstr "Pil"
+
+#: buttons/arrow.xml:23 buttons/cancel.xml:28 buttons/ellipse-v2.xml:51 buttons/ellipse45.xml:54
+#: buttons/ok.xml:27 objects/ellipse-v3.xml:43 objects/ellipse45.xml:45 objects/frame-v3.xml:53
+#: objects/frame45.xml:62 objects/text-v2.xml:32
+msgid "Outline colour"
+msgstr "Omriss farge"
+
+#: buttons/arrow.xml:35 buttons/ellipse-v2.xml:37 buttons/ellipse45.xml:40 objects/ellipse-v3.xml:36
+#: objects/ellipse45.xml:38 objects/frame-v3.xml:46 objects/frame45.xml:55 objects/text-v2.xml:39
+msgid "Outline width"
+msgstr "Bredde på omriss "
+
+#: buttons/arrow2.xml:3
+msgid "Circle Arrow 3D"
+msgstr "Farge på 3D sirkel-pil"
+
+#: buttons/arrow2.xml:32
+msgid "Colour 1"
+msgstr "Farge 1"
+
+#: buttons/arrow2.xml:39
+msgid "Colour 2"
+msgstr "Farge 2"
+
+#: buttons/arrow2.xml:46
+msgid "Colour 3"
+msgstr "Farge 3"
+
+#: buttons/arrow2.xml:53 buttons/arrow3.xml:33
+msgid "Ring colour"
+msgstr "Farge på ring"
+
+#: buttons/arrow3.xml:3
+msgid "Circle Arrow"
+msgstr "Sirkel-pil"
+
+#: buttons/arrow3d-left.xml:4
+msgid "3D Arrow Left"
+msgstr "3D venstre pil"
+
+#: buttons/arrow3d-left.xml:15 buttons/arrow3d-right.xml:15
+msgid "Color of upper part"
+msgstr "Fargen på øverste del"
+
+#: buttons/arrow3d-left.xml:22 buttons/arrow3d-right.xml:22
+msgid "Color of bottom part"
+msgstr "Farge på nederste del"
+
+#: buttons/arrow3d-right.xml:4
+msgid "3D Arrow Right"
+msgstr "3D høyre pil"
+
+#: buttons/cancel.xml:16 buttons/ok.xml:14 objects/text-v2.xml:25
+msgid "Fill colour"
+msgstr "Fyllingfarge"
+
+#: buttons/cancel2.xml:12 buttons/ok2.xml:11
+msgid "Box color"
+msgstr "Farge på boks"
+
+#: buttons/cancel2.xml:24
+msgid "X color"
+msgstr "X farge"
+
+#: buttons/ellipse-v2.xml:3 objects/ellipse-v3.xml:3
+msgid "Ellipse"
+msgstr "Ellipse"
+
+#: buttons/ellipse-v2.xml:30 buttons/ellipse45.xml:33 buttons/frame-v2.xml:25 buttons/frame45.xml:28
+#: buttons/movie.xml:33 objects/ellipse-v3.xml:29 objects/ellipse45.xml:31 objects/frame-v3.xml:25
+#: objects/frame45.xml:27
+msgid "Image opacity"
+msgstr "Gjennomsiktighet for bilde"
+
+#: buttons/ellipse-v2.xml:63 buttons/ellipse45.xml:66 buttons/frame-v2.xml:72 buttons/frame45.xml:82
+#: objects/ellipse-v3.xml:50 objects/ellipse45.xml:52 objects/frame-v3.xml:60 objects/frame45.xml:69
+msgid "Inner colour"
+msgstr "Inner-farge"
+
+#: buttons/ellipse45.xml:3 objects/ellipse45.xml:3
+msgid "Ellipse 45°"
+msgstr "Ellipse 45°"
+
+#: buttons/frame-v2.xml:3 objects/frame-v3.xml:3
+msgid "Frame"
+msgstr "Bilderamme"
+
+#: buttons/frame-v2.xml:32 buttons/frame45.xml:42 buttons/text-v3.xml:44 objects/frame-v3.xml:32
+#: objects/frame45.xml:41 objects/rectangle-v2.xml:17
+msgid "Rx"
+msgstr "Rx"
+
+#: buttons/frame-v2.xml:39 buttons/frame45.xml:49 buttons/text-v3.xml:51 objects/frame-v3.xml:39
+#: objects/frame45.xml:48 objects/rectangle-v2.xml:24
+msgid "Ry"
+msgstr "Ry"
+
+#: buttons/frame-v2.xml:46 buttons/frame45.xml:56
+msgid "Border width"
+msgstr "Rammebredde"
+
+#: buttons/frame-v2.xml:60 buttons/frame45.xml:70 buttons/movie.xml:40
+msgid "Border colour"
+msgstr "Rammefarge"
+
+#: buttons/frame45.xml:3 objects/frame45.xml:3
+msgid "Frame 45°"
+msgstr "Bilderamme 45°"
+
+#: buttons/hand-left.xml:4
+msgid "Hand Left"
+msgstr "Venstre hand"
+
+#: buttons/hand-left.xml:13 buttons/hand-right.xml:13
+msgid "Hand color"
+msgstr "Handfarge"
+
+#: buttons/hand-right.xml:4
+msgid "Hand Right"
+msgstr "Høyre hand"
+
+#: buttons/home-v2.xml:4
+msgid "Home"
+msgstr "Hjem"
+
+#: buttons/home-v2.xml:23 objects/rectangle-v2.xml:31
+msgid "Colour"
+msgstr "Farge"
+
+#: buttons/movie.xml:3
+msgid "Movie"
+msgstr "Film"
+
+#: buttons/ok2.xml:4
+msgid "Ok"
+msgstr "OK"
+
+#: buttons/ok2.xml:24
+msgid "V color"
+msgstr "V farge"
+
+#: buttons/pill.xml:3
+msgid "Pill"
+msgstr "Ikonknapp"
+
+#: buttons/pill.xml:30
+msgid "C1"
+msgstr "C1"
+
+#: buttons/pill.xml:37
+msgid "C2"
+msgstr "C2"
+
+#: buttons/pill.xml:44 buttons/text-circle-v2.xml:19 buttons/text-square-v2.xml:20
+#: buttons/text-underlined-v3.xml:19 buttons/text-v3.xml:19
+msgid "Label"
+msgstr "Etikett"
+
+#: buttons/pill.xml:50 buttons/text-circle-v2.xml:25 buttons/text-square-v2.xml:26
+#: buttons/text-underlined-v3.xml:25 buttons/text-v3.xml:25
+msgid "Text colour"
+msgstr "Tekstfarge"
+
+#: buttons/pill2.xml:4
+msgid "Pill 2"
+msgstr "Ikonknapp 2"
+
+#: buttons/pill2.xml:29
+msgid "Pill color"
+msgstr "Farge på ikonknapp"
+
+#: buttons/pill3.xml:4
+msgid "Pill 3"
+msgstr "Ikonknapp 3"
+
+#: buttons/text-circle-v2.xml:3
+msgid "Text with circle"
+msgstr "Tekst med sirkel"
+
+#: buttons/text-circle-v2.xml:39
+msgid "Circle colour"
+msgstr "Farge på sirkel"
+
+#: buttons/text-circle-v2.xml:51
+msgid "Circle radius"
+msgstr "Sirkelradius"
+
+#: buttons/text-square-v2.xml:3
+msgid "Text with square"
+msgstr "Tekst med ramme"
+
+#: buttons/text-square-v2.xml:40
+msgid "Square colour"
+msgstr "Rammefarge"
+
+#: buttons/text-underlined-v3.xml:3
+msgid "Underlined text"
+msgstr "Understreket tekst"
+
+#: buttons/text-underlined-v3.xml:39
+msgid "Underline colour"
+msgstr "Farge på understrekning"
+
+#: buttons/text-underlined-v3.xml:51
+msgid "Underline thickness"
+msgstr "Tykkelse på understrekning"
+
+#: buttons/text-underlined-v3.xml:58
+msgid "Underline offset"
+msgstr "Utgangspunkt for understrekning"
+
+#: buttons/text-v3.xml:37 objects/text-v2.xml:46
+msgid "Background colour"
+msgstr "Bakgrunnsfarge"
+
+#: objects/gold-frame.xml:3
+msgid "Gold frame"
+msgstr "Gullramme"
+
+#: objects/image.xml:16
+msgid "Opacity"
+msgstr "Gjennomsiktighet"
+
+#: objects/rectangle-v2.xml:3
+msgid "Rectangle"
+msgstr "Rektangel"
+
+#: objects/text-v2.xml:13
+msgid "text"
+msgstr "tekst"
+
+#: templates/category.xml:3
+msgid "Basic"
+msgstr "Grunnleggende"
+
+#: templates/category.xml:4
+msgid "Birthday"
+msgstr "Bursdag"
+
+#: templates/category.xml:6
+msgid "Love"
+msgstr "Kjærlighet"
+
+#: templates/category.xml:7
+msgid "Miscellaneous"
+msgstr "Diverse"
+
+#: templates/category.xml:8
+msgid "Nature"
+msgstr "Natur"
+
+#: templates/category.xml:9
+msgid "Seasons"
+msgstr "Sesonger"
+
+#: templates/category.xml:10
+msgid "Travel"
+msgstr "Reise"
+
+#: templates/category.xml:11
+msgid "Wedding"
+msgstr "Bryllup"
+
+#: transitions/fade.xml:4
+msgid "Fade-In/Out"
+msgstr "Fade inn/ut:"
+
+#: transitions/wipeBottomToTop.xml:4
+msgid "Wipe bottom to top"
+msgstr "Gå fra bunnen og oppover"
+
+#: transitions/wipeLeftToRight.xml:4
+msgid "Wipe left to right"
+msgstr "Gå fra venstre til høyre"
+
+#: transitions/wipeRightToLeft.xml:4
+msgid "Wipe right to left"
+msgstr "Gå fra høyre til venstre"
+
+#: transitions/wipeTopToBottom.xml:4
+msgid "Wipe top to bottom"
+msgstr "Gå fra topp og nedover"
+
+#~ msgid "Christmas"
+#~ msgstr "Jul"
+
+#~ msgid "Volume:"
+#~ msgstr "Volum"
+
+#~ msgid "Cell properties"
+#~ msgstr "Egenskaper for celle"
+
+#~ msgid "Image:"
+#~ msgstr "Bilde:"
+
+#~ msgid "Colour:"
+#~ msgstr "Farge:"
+
+#~ msgid "Executing command: "
+#~ msgstr "Kjør kommando: "
+
+#~ msgid ""
+#~ "Unfortunately there is no DVD player specified in the DVDStyler settings. Please set the path to the DVD "
+#~ "player in the 'Settings/Core/Preview command' or open the following directory with your DVD player: "
+#~ msgstr ""
+#~ "DVD spiller er ikke spesifisert i DVDStyler oppsettet. Angi riktig bane i Innstillinger/Kjerne/"
+#~ "Forhåndsvisning-kommando', eller åpn mappen med din dvd-spiller: "
+
+#~ msgid "Preview command:"
+#~ msgstr "Forhåndsvisning-kommando:"
+
+#~ msgid "Executable Files "
+#~ msgstr "Kjørbare filer "
+
+#~ msgid "Use mplex for menus"
+#~ msgstr "Bruk mplex for menyer"
+
+#~ msgid "Start/End:"
+#~ msgstr "Start/Slutt:"

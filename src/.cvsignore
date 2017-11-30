@@ -1,0 +1,14 @@
+Makefile
+dvdstyler
+bak
+.deps
+Makefile.in
+*.exe
+*.dll
+dvdvmy.h
+dvdvml.c
+dvdvmy.c
+Version.h
+fonts.conf
+*.d
+German

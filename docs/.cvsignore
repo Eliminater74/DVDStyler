@@ -1,0 +1,9 @@
+*.zip
+*.doc
+*.pdf
+*.txt
+Makefile.in
+Makefile
+Makefile.win
+upload.sh
+html_*
