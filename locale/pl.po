@@ -10,7 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2016-06-23 10:31+0200\n"
 "PO-Revision-Date: 2016-07-04 17:26+0100\n"
 "Last-Translator: \n"
-"Language-Team: Michał Trzebiatowski <hippie_1968 at hotmail.com>\n"
+"Language-Team: Michał Trzebiatowski <hippie_1968 at hotmail.com> 201710 amendments <AAciej at gmail.com>\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -449,9 +449,9 @@ msgstr "Nie można usunąć pliku '%s'."
 #, c-format
 msgid "There is %d file (%0.1f MB) in the transcoding cache."
 msgid_plural "There are %d files (%0.1f MB) in the transcoding cache."
-msgstr[0] "Istnieje %d plik (%0.1f MB) w pamięci podręcznej transkodowania."
-msgstr[1] "Istnieją %d pliki (%0.1f MB) w pamięci podręcznej transkodowania."
-msgstr[2] "Istnieje %d plików (%0.1f MB) w pamięci podręcznej transkodowania."
+msgstr[0] "Liczba plików w pamięci podręcznej: %d (%0.1f MB)."
+msgstr[1] "Liczba plików w pamięci podręcznej: %d (%0.1f MB)."
+msgstr[2] "Liczba plików w pamięci podręcznej: %d (%0.1f MB)."
 
 #: src/Cache.cpp:375
 msgid "Do you want to clear the cache?"
@@ -776,14 +776,12 @@ msgstr "nie można przejść do rozdziału %d z tytułu %d, istnieje tylko %d"
 
 #: src/DVDAction.cpp:253
 msgid "cannot jump to a specific menu in another titleset, only to root/chapter/audio/subtitle/angle menu"
-msgstr ""
-"nie można przejść do określonego menu w innym zestawie tytułów, tylko do menu root/rozdziału/audio/napisów/"
+msgstr "nie można przejść do określonego menu w innym zestawie tytułów, tylko do menu root/rozdziału/audio/napisów/"
 "kąta"
 
 #: src/DVDAction.cpp:256
 msgid "cannot jump from regular menu to a title in another titleset, use VMGM menu instead"
-msgstr ""
-"nie można przejść ze zwykłego tytułu menu do tytułu w innym zestawie tytułów, użyj zamiast tego menu VMGM"
+msgstr "nie można przejść ze zwykłego tytułu menu do tytułu w innym zestawie tytułów, użyj zamiast tego menu VMGM"
 
 #: src/DVDAction.cpp:258
 msgid "cannot jump to a title in another titleset"
@@ -1773,7 +1771,7 @@ msgstr "Bitrate wideo:"
 #: src/NewProjectDlg.cpp:46 src/NewProjectDlg.cpp:52 src/SettingsDlg.cpp:243 src/SettingsDlg.cpp:248
 #: src/SettingsDlg.cpp:252
 msgid "KBit/s"
-msgstr "Kb/s"
+msgstr "kb/s"
 
 #: src/NewProjectDlg.cpp:52
 msgid "Audio bitrate:"
@@ -2327,12 +2325,10 @@ msgid "%d Minutes"
 msgstr "%d Minut"
 
 #: src/StatusBar.cpp:65
-#, fuzzy, c-format
 msgid "%d Mb/s"
 msgstr "%d Mb/s"
 
 #: src/StatusBar.cpp:66
-#, fuzzy, c-format
 msgid "%.1f Mb/s"
 msgstr "%.1f Mb/s"
 
