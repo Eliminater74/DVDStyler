@@ -1503,7 +1503,7 @@ void MenuEditor::OnProperties(wxCommandEvent& event) {
 		if (propDlg.ShowModal() == wxID_OK) {
 			ShowSafeTV();
 			ShowGrid(); 
-			SendChangedEvent(true);
+			SendChangedEvent();
 			Refresh(true, NULL);
 		}
 	} else {
@@ -1535,7 +1535,7 @@ void MenuEditor::OnProperties(wxCommandEvent& event) {
 				obj->UpdateSize();
 			}
 			RefreshSelected();
-			SendChangedEvent(true);
+			SendChangedEvent();
 		}
 	}
 }
