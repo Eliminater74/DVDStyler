@@ -24,9 +24,6 @@
 #include "rc/justifyCenterSelected.png.h"
 #include "rc/justifyRight.png.h"
 #include "rc/justifyRightSelected.png.h"
-#if !wxCHECK_VERSION(2,9,0)
-#define wxBitmapToggleButton wxToggleBitmapButton
-#endif
 
 enum {
 	JUMP_ACTION_RADIO_ID = 7900,
@@ -405,8 +402,11 @@ void MenuObjectPropDlg::CreateAspectCtrls(wxSizer* sizer, wxSVG_PRESERVEASPECTRA
 }
 
 void MenuObjectPropDlg::CreateImageCrtls(wxFlexGridSizer* grid, const wxString& title, MenuObjectParam* param) {
+	// video duration
+	m_videoDuration = m_object->GetParamVideoDuration(param->name);
+	// file name
 	wxString imageFile = m_object->GetParam(param->name);
-	wxString fname = imageFile.Find(wxT('#')) != -1 ? imageFile.BeforeLast(wxT('#')) : imageFile;
+	wxString fname = imageFile.Find(wxT('#')) != -1 && m_videoDuration == 0 ? imageFile.BeforeLast(wxT('#')) : imageFile;
 	if (!m_object->IsButton()) {
 		m_videoChoice = AddChoiceProp(wxT(""), wxArrayString());
 		int sel = 0;
@@ -470,8 +470,6 @@ void MenuObjectPropDlg::CreateImageCrtls(wxFlexGridSizer* grid, const wxString& 
 		}
 	} else
 		m_videoPos = m_defaultPos;
-	// video duration
-	m_videoDuration = m_object->GetParamVideoDuration(param->name);
 	// keep aspect
 	wxSVGPreserveAspectRatio aspectRatio;
 	aspectRatio.SetValueAsString(m_object->GetParam(param->name, wxT("preserveAspectRatio")));
