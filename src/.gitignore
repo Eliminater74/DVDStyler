@@ -1,0 +1,7 @@
+*.o
+*.d
+*.dll
+*.exe
+/dvdvml.c
+/dvdvmy.c
+/dvdvmy.h

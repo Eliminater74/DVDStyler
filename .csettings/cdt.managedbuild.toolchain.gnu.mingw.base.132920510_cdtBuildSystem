@@ -11,11 +11,11 @@
 					</tool>
 					<tool id="cdt.managedbuild.tool.gnu.archiver.mingw.base.1426836052" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.mingw.base"/>
 					<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.969354288" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base">
-						<option id="gnu.cpp.compiler.option.include.paths.1744682040" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath"/>
+						<option id="gnu.cpp.compiler.option.include.paths.1744682040" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false"/>
 						<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.777825308" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 					</tool>
 					<tool id="cdt.managedbuild.tool.gnu.c.compiler.mingw.base.533247573" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.mingw.base">
-						<option id="gnu.c.compiler.option.include.paths.459939353" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath"/>
+						<option id="gnu.c.compiler.option.include.paths.459939353" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false"/>
 						<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.705534568" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 					</tool>
 					<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.base.894718814" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.base"/>
