@@ -1,24 +1,26 @@
 ﻿[Setup]
 AppName=DVDStyler
-AppVerName=DVDStyler v2.8
+AppVerName=DVDStyler v3.0.4
+AppPublisher=Thüring IT-Consulting
 AppPublisherURL=http://www.dvdstyler.org
 AppSupportURL=http://www.dvdstyler.org
 AppUpdatesURL=http://www.dvdstyler.org
 DefaultDirName={pf}\DVDStyler
 DefaultGroupName=DVDStyler
-OutputBaseFilename=DVDStyler-2.8-win32
+OutputBaseFilename=DVDStyler-3.0.4-win32
 Compression=lzma
 SolidCompression=yes
-UninstallDisplayIcon={app}\bin\DVDStyler.exe
+UninstallDisplayIcon={app}\bin\DVDStyler.exe  
 PrivilegesRequired=admin
 WizardSmallImageFile=dvdstyler.bmp
+DisableWelcomePage=no
 ChangesAssociations=yes
 AllowNoIcons=yes
-;LicenseFile=..\COPYING
 InfoBeforeFile=Info.rtf
 
 [Languages]
 Name: "ar"; MessagesFile: "Languages\Arabic.isl"
+Name: "bg"; MessagesFile: "Languages\Bulgarian.isl"
 Name: "ca"; MessagesFile: "compiler:Languages\Catalan.isl"
 Name: "cs"; MessagesFile: "compiler:Languages\Czech.isl"  
 Name: "da"; MessagesFile: "compiler:Languages\Danish.isl"
@@ -60,11 +62,14 @@ Name: "associate"; Description: "{cm:AssocFileExtension,DVDStyler,dvds}";
 
 [Files]
 Source: "..\src\*.exe"; DestDir: "{app}\bin"; Flags: ignoreversion
-Source: "..\src\*.dll"; DestDir: "{app}\bin"; Flags: ignoreversion
+Source: "..\src\*.dll"; DestDir: "{app}\bin"; Flags: ignoreversion 
 Source: "..\src\fonts.conf"; DestDir: "{app}\bin"; Flags: ignoreversion
+Source: "..\src\*.bat"; DestDir: "{app}\bin"; Flags: ignoreversion 
+Source: "..\src\ff_vbr.*"; DestDir: "{app}\bin"; Flags: ignoreversion
+Source: "..\src\*.txt"; DestDir: "{app}\bin"; Flags: ignoreversion
+Source: "..\src\German\*.*"; DestDir: "{app}\bin\German"; Flags: ignoreversion
 Source: "..\backgrounds\*.jpg"; DestDir: "{app}\backgrounds"; Flags: ignoreversion
 Source: "..\backgrounds\*.png"; DestDir: "{app}\backgrounds"; Flags: ignoreversion
-Source: "..\backgrounds\License.txt"; DestDir: "{app}\backgrounds"; Flags: ignoreversion
 Source: "..\buttons\*.xml"; DestDir: "{app}\buttons"; Flags: ignoreversion
 Source: "..\buttons\deprecated\*.xml"; DestDir: "{app}\buttons\deprecated"; Flags: ignoreversion
 Source: "..\buttons\*.lst"; DestDir: "{app}\buttons"; Flags: ignoreversion
@@ -76,6 +81,8 @@ Source: "..\templates\Birthday\*.png"; DestDir: "{app}\templates\Birthday"; Flag
 Source: "..\templates\Birthday\*.dvdt"; DestDir: "{app}\templates\Birthday"; Flags: ignoreversion
 Source: "..\templates\Christmas\*.png"; DestDir: "{app}\templates\Christmas"; Flags: ignoreversion
 Source: "..\templates\Christmas\*.dvdt"; DestDir: "{app}\templates\Christmas"; Flags: ignoreversion
+Source: "..\templates\Love\*.png"; DestDir: "{app}\templates\Love"; Flags: ignoreversion
+Source: "..\templates\Love\*.dvdt"; DestDir: "{app}\templates\Love"; Flags: ignoreversion
 Source: "..\templates\Miscellaneous\*.png"; DestDir: "{app}\templates\Miscellaneous"; Flags: ignoreversion
 Source: "..\templates\Miscellaneous\*.dvdt"; DestDir: "{app}\templates\Miscellaneous"; Flags: ignoreversion
 Source: "..\templates\Nature\*.png"; DestDir: "{app}\templates\Nature"; Flags: ignoreversion
@@ -96,6 +103,7 @@ Source: "..\ChangeLog"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\README"; DestDir: "{app}"; Flags: ignoreversion
 
 Source: "..\locale\ar\*"; DestDir: "{app}\locale\ar"; Flags: ignoreversion
+Source: "..\locale\bg\*"; DestDir: "{app}\locale\bg"; Flags: ignoreversion
 Source: "..\locale\ca\*"; DestDir: "{app}\locale\ca"; Flags: ignoreversion
 Source: "..\locale\cs\*"; DestDir: "{app}\locale\cs"; Flags: ignoreversion
 Source: "..\locale\da\*"; DestDir: "{app}\locale\da"; Flags: ignoreversion
