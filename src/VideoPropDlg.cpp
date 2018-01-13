@@ -67,7 +67,8 @@ BEGIN_EVENT_TABLE(VideoPropDlg,wxDialog)
 	EVT_COMMAND_SCROLL(ID_SLIDER, VideoPropDlg::OnSliderScroll)
 END_EVENT_TABLE()
 
-VideoPropDlg::VideoPropDlg(wxWindow* parent,Vob* vob, AspectRatio aspectRatio) {
+VideoPropDlg::VideoPropDlg(wxWindow* parent, DVD* dvd, Vob* vob, AspectRatio aspectRatio) {
+	m_dvd = dvd;
 	m_vob = vob;
 	m_stream = vob->GetVideoStream();
 	m_aspectRatio = aspectRatio;
@@ -312,8 +313,17 @@ VideoPropDlg::VideoPropDlg(wxWindow* parent,Vob* vob, AspectRatio aspectRatio) {
 
     // format
     bool copyEnabled = m_stream->IsCopyPossible();
-    m_dstChoice->Append(DVD::GetVideoFormatLabels(copyEnabled));
-    m_dstChoice->SetSelection(m_stream->GetVideoFormat() - (copyEnabled ? 1 : 2));
+    m_dstChoice->Append(DVD::GetVideoFormatLabels(copyEnabled, false, false, m_dvd->IsHD()));
+	int vf = m_stream->GetVideoFormat();
+	if (m_dvd->IsHD()) {
+		if (vf >= vfPAL_HALF_HD) {
+			vf = vf - vfPAL_HALF_HD + (copyEnabled ? 1 : 0);
+		} else
+			vf =  vf >= vfPAL && vf < vfPAL_HALF_HD ? vf + (copyEnabled ? 5 : 4) : 0;
+	} else {
+		vf -= (copyEnabled ? 1 : 2);
+	}
+    m_dstChoice->SetSelection(vf);
     m_aspectChoice->Append(DVD::GetAspectRatioLabels());
     m_aspectChoice->SetSelection(m_aspectRatio - 1);
     m_interlacedChoice->SetSelection(m_vob->GetInterlaced() ? 1 : 0);
@@ -386,8 +396,25 @@ double TimeToDouble(wxString timeStr) {
 }
 
 VideoFormat VideoPropDlg::GetVideoFormat() {
-	bool copyEnabled = m_stream->IsCopyPossible();
-	return (VideoFormat) (m_dstChoice->GetSelection() + (copyEnabled ? 1 : 2));
+	int vf = m_dstChoice->GetSelection();
+	if (m_dvd->IsHD()) {
+		if (m_stream->IsCopyPossible()) {
+			if (vf == 0) {
+				vf = vfCOPY;
+			} else if (vf <= 6) {
+				vf += vfPAL_HALF_HD - 1;
+			} else
+				vf -= 5;
+		} else {
+			if (vf <= 5) {
+				vf += vfPAL_HALF_HD;
+			} else
+				vf -= 4;
+		}
+	} else {
+		vf += (m_stream->IsCopyPossible() ? 1 : 2);
+	}
+	return (VideoFormat) vf;
 }
 
 AspectRatio VideoPropDlg::GetAspectRatio() {

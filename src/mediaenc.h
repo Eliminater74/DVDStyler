@@ -23,7 +23,13 @@ enum VideoFormat {
 	vfPAL_HALF_D1,
 	vfNTSC_HALF_D1,
 	vfPAL_VCD,
-	vfNTSC_VCD
+	vfNTSC_VCD,
+	vfPAL_HALF_HD,
+	vfNTSC_HALF_HD,
+	vfPAL_HDV,
+	vfNTSC_HDV,
+	vfPAL_FULL_HD,
+	vfNTSC_FULL_HD
 };
 
 enum AudioFormat {

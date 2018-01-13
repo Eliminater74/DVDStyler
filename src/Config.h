@@ -21,6 +21,7 @@ const wxString DEF_VERSION		= wxT("");
 const int DEF_LANGUAGE			= wxLANGUAGE_UNKNOWN;
 const wxString DEF_LANGUAGE_CODE= wxT("");
 const wxString DEF_DISC_LABEL	= wxT("DVD");
+const int DEF_DVD_RESOLUTION	= 0;
 const int DEF_DISC_CAPACITY		= 3;
 const int DEF_POST_COMMAND		= 0;
 const int DEF_VIDEO_FORMAT		= 2;
@@ -150,6 +151,7 @@ public:
 	CONFIG_PROP(Version,  _T("Version"), DEF_VERSION)
 	CONFIG_PROP(LanguageCode, _T("Interface/LanguageCode"), DEF_LANGUAGE_CODE)
     CONFIG_PROP(DefDiscLabel, _T("Interface/DefDiscLabel"), DEF_DISC_LABEL)
+	CONFIG_PROP_INT(DefDvdResolution, _T("Interface/DefDvdResolution"), DEF_DVD_RESOLUTION)
     CONFIG_PROP_INT(DefDiscCapacity, _T("Interface/DefDiscCapacity"), DEF_DISC_CAPACITY)
     CONFIG_PROP_INT(DefPostCommand, _T("Interface/DefPostCommand"), DEF_POST_COMMAND)
 	
@@ -211,6 +213,8 @@ public:
 	CONFIG_PROP_INT(MenuFrameCount,_T("Generate/MenuFrameCount"), DEF_MENU_FRAME_COUNT)
 	CONFIG_PROP_INT(MenuVideoBitrate, _T("Generate/MenuVideoBitrate"), DEF_MENU_VIDEO_BITRATE)
 	CONFIG_PROP_BOOL(MenuVideoCBR, _T("Generate/MenuVideoCBR"), false)
+	CONFIG_PROP_BOOL(AllowHdMenues, _T("Generate/AllowHdMenues"), false)
+	CONFIG_PROP_BOOL(AllowHdTitles, _T("Generate/AllowHdTitles"), false)
 	CONFIG_PROP_BOOL(DrawButtonsOnBackground, _T("Generate/DrawButtonsOnBackground"), true)
 	CONFIG_PROP_BOOL(ButtonsOffset2px, _T("Generate/ButtonsOffset2px"), false)
     CONFIG_PROP_INT(SlideshowVideoBitrate, _T("Generate/SlideshowVideoBitrate"), DEF_SLIDESHOW_VIDEO_BITRATE)

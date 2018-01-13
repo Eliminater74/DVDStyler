@@ -238,6 +238,7 @@ void SettingsDlg::CreatePropPanel(wxSizer* sizer) {
 			wxT(""), false);
 	AddSpacer(lineSizer, 4);
 	AddCheckProp(lineSizer, _("Draw buttons on background"), s_config.GetDrawButtonsOnBackground(def));
+	AddCheckProp(lineSizer, _("Allow HD menus"), s_config.GetAllowHdMenues(def));
 	
 	lineSizer = AddSpinProp(coreGrid, _("Menu video bitrate:"), s_config.GetMenuVideoBitrate(def), 1, 9000, 80,
 			_("KBit/s"), false);
@@ -304,10 +305,13 @@ void SettingsDlg::CreatePropPanel(wxSizer* sizer) {
 	EndGroup();
 	
 	AddText(coreGrid, _("NTSC film:"));
-	AddCheckProp(coreGrid, _("reencode by default"), s_config.GetDefRencodeNtscFilm(def));
+	AddCheckProp(coreGrid, _("re-encode by default"), s_config.GetDefRencodeNtscFilm(def));
+	AddText(coreGrid, _("HD video:"));
+	AddCheckProp(coreGrid, _("allow (experimental)"), s_config.GetAllowHdTitles(def));
 
 	grpSizer = BeginGroup(debugSizer, _("Debug"));
 	AddCheckProp(grpSizer, _("Don't remove temp files"), !s_config.GetRemoveTempFiles(def));
+	
 }
 
 bool SettingsDlg::SetValues() {
@@ -362,6 +366,7 @@ bool SettingsDlg::SetValues() {
 	// system core settings
 	s_config.SetMenuFrameCount(GetInt(i++));
 	s_config.SetDrawButtonsOnBackground(GetBool(i++));
+	s_config.SetAllowHdMenues(GetBool(i++));
 	s_config.SetMenuVideoBitrate(GetInt(i++));
 	s_config.SetMenuVideoCBR(GetBool(i++));
 	s_config.SetSlideshowVideoBitrate(GetInt(i++));
@@ -387,6 +392,7 @@ bool SettingsDlg::SetValues() {
 	s_config.SetUseMplex(mplex == 0);
 	s_config.SetUseMplexForMenus(mplex == 0 || mplex == 2);
 	s_config.SetDefRencodeNtscFilm(GetBool(i++));
+	s_config.SetAllowHdTitles(GetBool(i++));
 	s_config.SetRemoveTempFiles(!GetBool(i++));
 	return true;
 }

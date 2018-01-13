@@ -56,6 +56,7 @@ public:
 	
 	wxSize GetResolution();
 	wxSize GetFrameResolution();
+	void UpdateResolution(double fx, double fy);
 	
 	/** Returns aspect ratio */
 	inline AspectRatio GetAspectRatio() { return m_aspectRatio; }

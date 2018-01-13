@@ -229,9 +229,9 @@ bool DVDStyler::OnInit() {
 			VideoFormat vf = (VideoFormat) s_config.GetDefVideoFormat();
 			AudioFormat af = (AudioFormat) s_config.GetDefAudioFormat();
 			AspectRatio ar = (AspectRatio) s_config.GetDefAspectRatio();
-			DiscCapacity dc = (DiscCapacity) s_config.GetDefDiscCapacity();
-			mainWin->NewDVD(filename, wxT(""), s_config.GetDefDiscLabel(), dc, s_config.GetVideoBitrate(),
-					s_config.GetAudioBitrate(), vf <= vfCOPY ? vfPAL : vf,
+			mainWin->NewDVD(filename, wxT(""), s_config.GetDefDiscLabel(),
+					(DvdResolution) s_config.GetDefDvdResolution(), (DiscCapacity) s_config.GetDefDiscCapacity(),
+					s_config.GetVideoBitrate(), s_config.GetAudioBitrate(), vf <= vfCOPY ? vfPAL : vf,
 					af <= afCOPY ? afMP2 : af, ar <= arAUTO ? ar4_3 : ar);
 		} else {
 			wxFfmpegMediaDecoder decoder;
@@ -283,9 +283,10 @@ bool DVDStyler::OnInit() {
 			if (dlg.IsNewProject()) {
 				TemplateDlg templateDlg(mainWin, dlg.GetAspectRatio());
 				wxString templateFile = templateDlg.ShowModal() == wxID_OK ? templateDlg.GetTemplate() : wxT("");
-				mainWin->NewDVD(templateFile, templateDlg.GetTitle(), dlg.GetLabel(), dlg.GetCapacity(),
-						dlg.GetVideoBitrate(), dlg.GetAudioBitrate(), dlg.GetVideoFormat(), dlg.GetAudioFormat(),
-						dlg.GetAspectRatio(), dlg.GetDefPostCommand(), templateDlg.IsChapterMenu());
+				mainWin->NewDVD(templateFile, templateDlg.GetTitle(), dlg.GetLabel(),
+						dlg.GetDvdResolution(), dlg.GetCapacity(), dlg.GetVideoBitrate(), dlg.GetAudioBitrate(),
+						dlg.GetVideoFormat(), dlg.GetAudioFormat(), dlg.GetAspectRatio(),
+						dlg.GetDefPostCommand(), templateDlg.IsChapterMenu());
 			} else if (dlg.GetOpenFilename().length() > 0) {
 				mainWin->Open(dlg.GetOpenFilename());
 			} else {

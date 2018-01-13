@@ -13,6 +13,13 @@
 
 #include "Titleset.h"
 
+enum DvdResolution {
+	dvdSD = 0,
+	dvdHalfHD,
+	dvdHDV,
+	dvdFullHD
+};
+
 enum DiscCapacity {
 	dcCD = 0,
 	dcDVD1,
@@ -38,6 +45,12 @@ public:
     /** Sets disc label */
     void SetLabel(wxString label) { m_label = label; }
 	
+    /** Returns DVD resolution (SD / Half HD / Full HD)  */
+    DvdResolution GetDvdResolution() { return m_dvdResolution; }
+    /** Sets DVD resolution */
+    void SetDvdResolution(DvdResolution dvdResolution) { m_dvdResolution = dvdResolution; }
+    /** Returns true, if it's a HD DVD  */
+	bool IsHD() { return m_dvdResolution > dvdSD; }
     /** Returns disc capacity */
     DiscCapacity GetCapacity() { return m_capacity; }
     /** Sets disc capacity */
@@ -200,10 +213,11 @@ public:
 	
 	void RenderThumbnail(wxString fname);
 	
-	static wxArrayString GetVideoFormatLabels(bool copy = false, bool none = false, bool menu = false);
+	static wxArrayString GetVideoFormatLabels(bool copy = false, bool none = false, bool menu = false, bool hd = false);
 	static wxArrayString GetAudioFormatLabels(bool copy = false, bool none = false, bool pcm = true);
 	static wxArrayString GetSubtitleFormatLabels(bool copy = false, bool none = false);
 	static wxArrayString GetAspectRatioLabels(bool autom = false);
+	static wxArrayString GetDvdResolutionLabels();
 	static wxArrayString GetCapacityLabels();
 	static wxArrayString GetDefPostCommandLabels();
 	static wxArrayString GetVideoBitrateLabels();
@@ -233,8 +247,11 @@ private:
 	wxString m_isoFile;
 	/** disc label */
     wxString m_label;
+    /** DVD resolution (SD / Half HD / Full HD) */
+    DvdResolution m_dvdResolution;
     /** dics capacity */
     DiscCapacity m_capacity;
+    /** Default post command (last menu / root menu / next title) */
     DefaultPostCommand m_defPostCommand;
     bool m_videoBitrateAuto;
     int m_videoBitrate;

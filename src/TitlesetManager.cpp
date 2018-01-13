@@ -593,7 +593,7 @@ bool TitlesetManager::AddVideo(const wxString& fname, bool createTitle, int tsi,
 			// set destination format (default COPY) if codec is not mpeg2
 			if (m_reEncodingByDefault
 					|| vob->GetStreams().size() == 1 // only video is available
-					|| !stream->IsDvdCompliant()
+					|| !stream->IsDvdCompliant(m_dvd->IsHD())
 					|| stream->GetSourceVideoFormat() != pgcs.GetVideo().GetFormat()
 					|| (s_config.GetDefRencodeNtscFilm() && lround(stream->GetSourceFps()) == 24)
 					|| fabs(stream->GetSourceAspectRatio() - GetFrameAspectRatio(pgcs.GetVideo().GetAspect())) >= 0.1) {

@@ -30,7 +30,7 @@
 class VideoPropDlg: public wxDialog {
 public:
 	/** Constructor */
-	VideoPropDlg(wxWindow* parent, Vob* vob, AspectRatio aspectRatio);
+	VideoPropDlg(wxWindow* parent, DVD* dvd, Vob* vob, AspectRatio aspectRatio);
 	virtual ~VideoPropDlg();
 
     /** Displays dialog */
@@ -117,6 +117,8 @@ private:
 	static const long ID_RESET_TIME_BT;
 	//*)
 
+	/** The DVD */
+	DVD* m_dvd;
 	Vob* m_vob;
 	Stream* m_stream;
 	AspectRatio m_aspectRatio;

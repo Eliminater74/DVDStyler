@@ -21,6 +21,7 @@
 #if wxCHECK_VERSION(2,9,3)
 #include <wx/colourdata.h>
 #endif
+#include <wx/artprov.h>
 
 WX_DECLARE_OBJARRAY(wxBitmap, BitmapArray);
 
@@ -185,6 +186,13 @@ protected:
 			bool value = false, bool readonly = false, bool vertical = true, int proportion = 0);
 	void BeginCheckGroup(wxSizer* sizer, wxString label, bool value, bool readonly = false);
 	void EndGroup();
+
+	wxArrayPtrVoid m_icons;
+	wxArrayInt m_tooltipIcon;
+	wxArrayString m_tooltipTitle;
+	wxArrayString m_tooltipText;
+	int AddIcon(wxSizer* sizer, const wxString& title, const wxString& tooltip, wxArtID artId = wxART_INFORMATION);
+	void UpdateIcon(int index, const wxString& title, const wxString& tooltip, wxArtID artId = wxART_INFORMATION);
 	
 	/**
 	 * @return the pointer to the control with given index
@@ -225,6 +233,7 @@ protected:
 	virtual void OnCellRightClick(wxGridEvent& event);
 	virtual void OnCellChange(wxGridEvent& event);
 	virtual void OnRowDelete(wxCommandEvent& event);
+	virtual void OnShowTooltip(wxMouseEvent& event);
 	
 private:
     DECLARE_EVENT_TABLE()

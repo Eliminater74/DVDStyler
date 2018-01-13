@@ -93,8 +93,8 @@ wxImage Slideshow::GetThumbImage(int width, int height) {
 	wxBitmap thumbImg(width, height);
 	wxMemoryDC dc;
 	dc.SelectObject(thumbImg);
-	dc.SetPen(wxPen(*wxBLACK, 0, wxTRANSPARENT));
-	dc.SetBrush(wxBrush(*wxBLACK, wxSOLID));
+	dc.SetPen(*wxTRANSPARENT_PEN);
+	dc.SetBrush(wxBrush(*wxBLACK, wxBRUSHSTYLE_SOLID));
 	dc.DrawRectangle(0, 0, width, height);
 	wxImage img[3];
 	for (unsigned int i = 0; i < 3; i++) {
@@ -112,7 +112,7 @@ wxImage Slideshow::GetThumbImage(int width, int height) {
 		}
 	}
 	for (int i = 2; i >= 0; i--) {
-		dc.SetPen(wxPen(*wxWHITE, 0, wxSOLID));
+		dc.SetPen(wxPen(*wxWHITE, 0, wxPENSTYLE_SOLID));
 		if (img[i].Ok()) {
 			int w = img[i].GetWidth();
 			int h = img[i].GetHeight();
@@ -130,7 +130,7 @@ wxImage Slideshow::GetThumbImage(int width, int height) {
 				y = height - h - 2;
 			}
 			dc.DrawBitmap(wxBitmap(img[i]), x, y);
-			dc.SetBrush(wxBrush(*wxBLACK, wxTRANSPARENT));
+			dc.SetBrush(*wxTRANSPARENT_BRUSH);
 			dc.DrawRectangle(x, y, w, h);
 		} else {
 			int w = img[0].GetWidth();
@@ -141,7 +141,7 @@ wxImage Slideshow::GetThumbImage(int width, int height) {
 				x = width - w - 2;
 				y = height - h - 2;
 			}
-			dc.SetBrush(wxBrush(*wxBLACK, wxSOLID));
+			dc.SetBrush(wxBrush(*wxBLACK, wxBRUSHSTYLE_SOLID));
 			dc.DrawRectangle(x, y, w, h);
 		}
 	}

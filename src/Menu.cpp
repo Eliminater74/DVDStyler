@@ -79,13 +79,47 @@ void Menu::UpdateMenuLocation(int tsi, int pgci) {
 }
 
 void Menu::SetVideoFormat(VideoFormat videoFormat) {
+	if (!s_config.GetAllowHdMenues() && videoFormat > vfNTSC)
+		videoFormat = isNTSC(videoFormat) ? vfNTSC : vfPAL;
+	if (m_videoFormat == videoFormat)
+		return;
+	wxSize resolutionBefore = GetResolution();
 	m_videoFormat = videoFormat;
+	wxSize resolution = GetResolution();
+	if (resolutionBefore == resolution)
+		return;
+	UpdateResolution(((double) resolution.GetWidth()) / resolutionBefore.GetWidth(),
+			((double) resolution.GetHeight()) / resolutionBefore.GetHeight());
 }
 
 void Menu::SetAspectRatio(AspectRatio aspectRatio) {
 	if (m_aspectRatio == aspectRatio)
 		return;
+	wxSize resolutionBefore = GetResolution();
 	m_aspectRatio = aspectRatio;
+	wxSize resolution = GetResolution();
+	if (resolutionBefore == resolution)
+		return;
+	UpdateResolution(((double) resolution.GetWidth()) / resolutionBefore.GetWidth(),
+			((double) resolution.GetHeight()) / resolutionBefore.GetHeight());
+}
+
+wxSize Menu::GetResolution() {
+	if (m_videoFormat >= vfPAL_FULL_HD) {
+		return m_aspectRatio == ar16_9 ? wxSize(1920, 1080) : wxSize(1920, 1440);
+	} else if (m_videoFormat >= vfPAL_HDV) {
+		return m_aspectRatio == ar16_9 ? wxSize(1440, 810) : wxSize(1440, 1080);
+	} else if (m_videoFormat >= vfPAL_HALF_HD) {
+		return m_aspectRatio == ar16_9 ? wxSize(1280, 720) : wxSize(1280, 960);
+	}
+	return m_aspectRatio == ar16_9 ? wxSize(720, 405) : wxSize(720, 540);
+}
+
+wxSize Menu::GetFrameResolution() {
+	return GetFrameSize(m_videoFormat);
+}
+
+void Menu::UpdateResolution(double fx, double fy) {
 	// svg root element
 	m_svg->GetRootElement()->SetWidth(GetResolution().GetWidth());
 	m_svg->GetRootElement()->SetHeight(GetResolution().GetHeight());
@@ -106,35 +140,24 @@ void Menu::SetAspectRatio(AspectRatio aspectRatio) {
 		}
 	}
 	// change object coordinates and size
-	double f = m_aspectRatio == ar16_9 ? (double) 3/4 : (double) 4/3;
 	for (unsigned int obji = 0; obji < m_objects.GetCount(); obji++) {
 		MenuObject* obj = m_objects[obji];
 		// update font size
 		wxFont font = obj->GetParamFont(wxT("text"));
-		font.SetPointSize(round(font.GetPointSize()*f));
+		font.SetPointSize(round(font.GetPointSize()*fy));
 		obj->SetParamFont(wxT("text"), font);
-		// update object Y-coordinate and size
-		obj->SetY(round(obj->GetY()*f/2)*2);
+		// update object X/Y-coordinate
+		obj->SetX(round(obj->GetX()*fx/2)*2);
+		obj->SetY(round(obj->GetY()*fy/2)*2);
+		// update object size
 		if (!obj->IsDefaultSize() || obj->GetObjectParam(wxT("text")) == NULL) {
 			obj->SetDefaultSize(false);
-			obj->SetWidth(round(obj->GetWidth()*f));
-			obj->SetHeight(round(obj->GetHeight()*f));
+			obj->SetWidth(round(obj->GetWidth()*fy));
+			obj->SetHeight(round(obj->GetHeight()*fy));
 		}
 		obj->UpdateSize();
 	}
 	FixButtonCoordinates();
-}
-
-wxSize Menu::GetResolution() {
-	if (m_aspectRatio == ar16_9) // 16:9
-		return wxSize(720, 405);
-	return wxSize(720, 540); // 4:3
-}
-
-wxSize Menu::GetFrameResolution() {
-	if (m_videoFormat == vfNTSC)
-		return wxSize(720, 480);
-	return wxSize(720, 576); // vfPAL
 }
 
 /** Returns filename of background image/video */

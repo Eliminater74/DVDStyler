@@ -109,8 +109,13 @@ void MenuPropDlg::CreateVobGroup(wxSizer* sizer, bool loop) {
 	// format
 	AddText(grid, _("Format:"));
 	wxSizer* formatSizer = new wxBoxSizer(wxHORIZONTAL);
-	wxArrayString formats = DVD::GetVideoFormatLabels(false, false, true);
-	int vf = m_menu->GetVideoFormat() >= 2 ? m_menu->GetVideoFormat() - 2 : 0;
+	wxArrayString formats = DVD::GetVideoFormatLabels(false, false, true, s_config.GetAllowHdMenues() && m_dvd->IsHD());
+	int vf = m_menu->GetVideoFormat();
+	if (s_config.GetAllowHdMenues() && m_dvd->IsHD()) {
+		vf = vf >= vfPAL_HALF_HD ? vf - vfPAL_HALF_HD : (vf >= vfPAL && vf < vfPAL_HALF_HD ? vf + 4 : 0);
+	} else {
+		vf = vf >= vfPAL && vf < vfPAL_HALF_HD ? vf - 2 : 0;
+	}
 	formatSizer->Add(AddChoiceProp(formats[vf], formats), 0, wxEXPAND);
 	formatSizer->AddSpacer(4);
 	formats = DVD::GetAspectRatioLabels();
@@ -308,7 +313,13 @@ bool MenuPropDlg::SetValues() {
 	int n = 0;
 	
 	// set video format
-	VideoFormat videoFormat = (VideoFormat) (GetInt(n++) + 2);
+	int vf = GetInt(n++);
+	if (s_config.GetAllowHdMenues() && m_dvd->IsHD()) {
+		vf = vf <= 5 ? vf + vfPAL_HALF_HD : vf - 4;
+	} else {
+		vf += 2;
+	}
+	VideoFormat videoFormat = (VideoFormat) vf;
 	if (videoFormat != m_menu->GetVideoFormat()) {
 		m_dvd->GetPgcArray(m_tsi, true).SetVideoFormat(videoFormat);
 	}

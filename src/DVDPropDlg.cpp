@@ -65,7 +65,7 @@ wxArrayString DVDPropDlg::GetFPCommands() {
 bool DVDPropDlg::SetValues() {
 	if (!Validate())
 		return false;
-	int n = 9;
+	int n = s_config.GetAllowHdTitles() ? 10 : 9;
 	if (GetString(n).length() > 0) {
 		DVDAction action;
 		action.SetCustom(GetString(n));
@@ -73,6 +73,7 @@ bool DVDPropDlg::SetValues() {
 			return false;
 	}
 	m_dvd->SetLabel(GetLabel());
+	m_dvd->SetDvdResolution(GetDvdResolution());
 	m_dvd->SetCapacity(GetCapacity());
 	m_dvd->SetVideoBitrateAuto(GetVideoBitrate() < 0);
 	if (GetVideoBitrate() >= 0)

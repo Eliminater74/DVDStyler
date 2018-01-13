@@ -126,7 +126,7 @@ public:
 	bool IsCopyPossible();
 	
 	/** Returns true if stream video is DVD compliant */
-	bool IsDvdCompliant();
+	bool IsDvdCompliant(bool hd);
 	
 	wxSvgXmlNode* GetXML(DVDFileType type, Vob* vob);
 	bool PutXML(wxSvgXmlNode* node, Vob* vob);

@@ -36,7 +36,13 @@ VideoFormat Stream::GetSourceVideoFormat() {
 	int w = m_sourceVideoSize.GetWidth();
 	int h = m_sourceVideoSize.GetHeight();
 	if (fps == 25) {
-		if (w == 720 && h == 576)
+		if (w == 1920 && h == 1080)
+			return vfPAL_FULL_HD;
+		else if (w == 1440 && h == 1080)
+			return vfPAL_HALF_HD;
+		else if (w == 1280 && h == 720)
+			return vfPAL_HALF_HD;
+		else if (w == 720 && h == 576)
 			return vfPAL;
 		else if (w == 704 && h == 576)
 			return vfPAL_CROPPED;
@@ -45,7 +51,13 @@ VideoFormat Stream::GetSourceVideoFormat() {
 		else if (w == 352 && h == 288)
 			return vfPAL_VCD;
 	} else if (fps == 24 || fps == 30) {
-		if (w == 720 && h == 480)
+		if (w == 1920 && h == 1080)
+			return vfNTSC_FULL_HD;
+		else if (w == 1440 && h == 1080)
+			return vfNTSC_HALF_HD;
+		else if (w == 1280 && h == 720)
+			return vfNTSC_HALF_HD;
+		else if (w == 720 && h == 480)
 			return vfNTSC;
 		else if (w == 704 && h == 480)
 			return vfNTSC_CROPPED;
@@ -215,10 +227,12 @@ bool Stream::IsCopyPossible() {
 }
 
 /** Returns true if video stream is DVD compliant */
-bool Stream::IsDvdCompliant() {
+bool Stream::IsDvdCompliant(bool hd) {
 	if (GetType() != stVIDEO)
 		return true;
 	if (!IsCopyPossible() || GetSourceVideoFormat() == vfNONE)
+		return false;
+	if (!hd && GetSourceVideoFormat() >= vfPAL_HALF_HD)
 		return false;
 	return fabs(GetSourceAspectRatio() - GetFrameAspectRatio(ar4_3)) < 0.1 ||
 			fabs(GetSourceAspectRatio() - GetFrameAspectRatio(ar16_9)) < 0.1;

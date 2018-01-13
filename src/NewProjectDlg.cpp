@@ -12,6 +12,14 @@
 #include "DVD.h"
 #include "Config.h"
 
+enum {
+	DVD_RESOLUTION_CHOICE_ID = 7900,
+};
+
+BEGIN_EVENT_TABLE(NewProjectDlg, wxPropDlg)
+	EVT_CHOICE(DVD_RESOLUTION_CHOICE_ID, NewProjectDlg::OnChangeResolution)
+END_EVENT_TABLE()
+
 NewProjectDlg::NewProjectDlg(wxWindow *parent, bool create): wxPropDlg(parent) {
 	propIndex = 0;
 	if (create) {
@@ -33,7 +41,18 @@ void NewProjectDlg::CreateDVDPropPanel(wxSizer* sizer, DVD* dvd) {
 	}
 	AddTextProp(grid, _("Disc label:"), dvd ? dvd->GetLabel() : s_config.GetDefDiscLabel());
 
-	wxArrayString labels = DVD::GetCapacityLabels();
+	wxArrayString labels;
+	
+	if (s_config.GetAllowHdTitles()) {
+		labels = DVD::GetDvdResolutionLabels();
+		int sel = dvd ? dvd->GetDvdResolution() : s_config.GetDefDvdResolution();
+		wxSizer* s = AddChoiceProp(grid, _("DVD Resolution:"), labels[sel], labels, 220, false, DVD_RESOLUTION_CHOICE_ID);
+		s->AddSpacer(4);
+		AddIcon(s, _("Info"), _("Info"));
+		UpdateResolutionIcon(sel);
+	}
+
+	labels = DVD::GetCapacityLabels();
 	AddChoiceProp(grid, _("Disc capacity:"), labels[dvd ? dvd->GetCapacity() : s_config.GetDefDiscCapacity()], labels);
 
 	// Video bitrate
@@ -63,8 +82,11 @@ void NewProjectDlg::CreateDVDPropPanel(wxSizer* sizer, DVD* dvd) {
 	wxSizer* grp = BeginGroup(fSizer, _("Video Format"));
 	if (grp)
 		grp->Add(4, 4);
-	wxArrayString formats = DVD::GetVideoFormatLabels(false, false, true);
-	AddRadioGroupProp(grp, formats, (dvd ? dvd->GetVideoFormat() : s_config.GetDefVideoFormat()) - 2);
+	wxArrayString formats;
+	formats.Add(wxT("PAL"));
+	formats.Add(wxT("NTSC"));
+	VideoFormat vf = dvd ? dvd->GetVideoFormat() : (VideoFormat) s_config.GetDefVideoFormat();
+	AddRadioGroupProp(grp, formats, isNTSC(vf) ? 1 : 0);
 	if (grp)
 		grp->Add(4, 4);
 	// Aspect Ratio
@@ -108,38 +130,73 @@ bool NewProjectDlg::SetValues() {
 	return Validate();
 }
 
+void NewProjectDlg::UpdateResolutionIcon(int sel) {
+	UpdateIcon(0, sel > 0 ? _("Warning") : _("Info"),
+				sel > 0 ? wxT("DVD with HD resolution doesn't comply with the standard and\ncan be played only in some blue-ray or software players.")
+						: wxT("DVD standard officially supports only video data\nwith resolution up to 720x576 pixels (SD)."),
+				sel > 0 ? wxART_WARNING : wxART_INFORMATION);
+}
+
+void NewProjectDlg::OnChangeResolution(wxCommandEvent& evt) {
+	int sel = ((wxChoice*) evt.GetEventObject())->GetSelection();
+	UpdateResolutionIcon(sel);
+}
+
 wxString NewProjectDlg::GetLabel() {
 	return GetString(propIndex);
 }
 
+DvdResolution NewProjectDlg::GetDvdResolution() {
+	if (s_config.GetAllowHdTitles()) {
+		return (DvdResolution) GetInt(propIndex + 1);
+	}
+	return dvdSD;
+}
+
 DiscCapacity NewProjectDlg::GetCapacity() {
-	return (DiscCapacity) GetInt(propIndex+1);
+	int i2 = s_config.GetAllowHdTitles() ? 1 : 0;
+	return (DiscCapacity) GetInt(propIndex + i2 + 1);
 }
 
 int NewProjectDlg::GetVideoBitrate() {
-	int q = GetInt(propIndex+2);
-	int b = GetInt(propIndex+3);
+	int i2 = s_config.GetAllowHdTitles() ? 1 : 0;
+	int q = GetInt(propIndex + i2 + 2);
+	int b = GetInt(propIndex + i2 + 3);
 	if (q == 0)
 		return -1;
 	return q < 8 ? (9-q)*1000 : b;
 }
 
 int NewProjectDlg::GetAudioBitrate() {
-	return GetInt(propIndex+4);
+	int i2 = s_config.GetAllowHdTitles() ? 1 : 0;
+	return GetInt(propIndex + i2 + 4);
 }
 
 VideoFormat NewProjectDlg::GetVideoFormat() {
-	return (VideoFormat) (GetInt(propIndex+5) + 2);
+	int i2 = s_config.GetAllowHdTitles() ? 1 : 0;
+	int vf = GetInt(propIndex + i2 + 5);
+	if (GetDvdResolution() == dvdHalfHD)
+		vf += vfPAL_HALF_HD;
+	else if (GetDvdResolution() == dvdHDV)
+		vf += vfPAL_HDV;
+	else if (GetDvdResolution() == dvdFullHD)
+		vf += vfPAL_FULL_HD;
+	else 
+		vf += vfPAL;
+	return (VideoFormat) vf;
 }
 
 AspectRatio NewProjectDlg::GetAspectRatio() {
-	return (AspectRatio) (GetInt(propIndex+6) + 1);
+	int i2 = s_config.GetAllowHdTitles() ? 1 : 0;
+	return (AspectRatio) (GetInt(propIndex + i2 + 6) + 1);
 }
 
 AudioFormat NewProjectDlg::GetAudioFormat() {
-	return (AudioFormat) (GetInt(propIndex+7) + 2);
+	int i2 = s_config.GetAllowHdTitles() ? 1 : 0;
+	return (AudioFormat) (GetInt(propIndex + i2 + 7) + 2);
 }
 
 DefaultPostCommand NewProjectDlg::GetDefPostCommand() {
-	return (DefaultPostCommand) (GetInt(propIndex+8));
+	int i2 = s_config.GetAllowHdTitles() ? 1 : 0;
+	return (DefaultPostCommand) (GetInt(propIndex + i2 + 8));
 }

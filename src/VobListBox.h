@@ -145,6 +145,8 @@ private:
 	int GetChoiceIdx(unsigned int streamIdx);
 	/** Returns index of button for given stream */
 	int GetButtonIdx(unsigned int streamIdx);
+	/** Gets video format index */
+	int GetVideoFormatIdx(Stream* stream, VideoFormat videoFormat);
 	/** Sets video format */
 	void SetVideoFormat(int videoFormat);
 	/** Get video format */

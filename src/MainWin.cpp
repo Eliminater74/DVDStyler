@@ -244,7 +244,7 @@ MainWin::MainWin(): wxFrame(NULL, -1, _T(""), wxDefaultPosition, wxDefaultSize,
 	VideoFormat vf = (VideoFormat) s_config.GetDefVideoFormat();
 	AudioFormat af = (AudioFormat) s_config.GetDefAudioFormat();
 	AspectRatio ar = (AspectRatio) s_config.GetDefAspectRatio();
-	NewDVD(wxT(""), wxT(""), s_config.GetDefDiscLabel(),
+	NewDVD(wxT(""), wxT(""), s_config.GetDefDiscLabel(), (DvdResolution) s_config.GetDefDvdResolution(),
 			(DiscCapacity) s_config.GetDefDiscCapacity(), s_config.GetVideoBitrate(), s_config.GetAudioBitrate(),
 			vf <= vfCOPY ? vfPAL : vf, af <= afCOPY ? afMP2 : af, ar <= arAUTO ? ar4_3 : ar);
 
@@ -690,14 +690,15 @@ void MainWin::OnClose(wxCloseEvent &event) {
 	Destroy();
 }
 
-void MainWin::NewDVD(wxString templateFile, wxString discTitle, wxString discLabel, DiscCapacity capacity,
-		int videoBitrate, int audioBitrate, VideoFormat videoFormat, AudioFormat audioFormat, AspectRatio aspectRatio,
-		DefaultPostCommand defPostCommand, bool chapterMenu) {
+void MainWin::NewDVD(wxString templateFile, wxString discTitle, wxString discLabel, DvdResolution dvdResolution,
+		DiscCapacity capacity, int videoBitrate, int audioBitrate, VideoFormat videoFormat, AudioFormat audioFormat,
+		AspectRatio aspectRatio, DefaultPostCommand defPostCommand, bool chapterMenu) {
 	if (aspectRatio == ar16_9 && templateFile.Length()
 			&& wxFile::Exists(templateFile.substr(0, templateFile.length()-5) + wxT("WS.dvdt")))
 		templateFile = templateFile.substr(0, templateFile.length()-5) + wxT("WS.dvdt");
 	if (templateFile.Length() && Open(templateFile)) {
 		m_dvd->SetLabel(discLabel);
+		m_dvd->SetDvdResolution(dvdResolution);
 		m_dvd->SetCapacity(capacity);
 		m_dvd->SetVideoBitrateAuto(videoBitrate == -1);
 		m_dvd->SetVideoBitrate(videoBitrate > 0 ? videoBitrate : 4500);
@@ -801,6 +802,7 @@ void MainWin::NewDVD(wxString templateFile, wxString discTitle, wxString discLab
 			delete m_dvd;
 		m_dvd = new DVD;
 		m_dvd->SetLabel(discLabel);
+		m_dvd->SetDvdResolution(dvdResolution);
 		m_dvd->SetCapacity(capacity);
 		m_dvd->SetVideoBitrateAuto(videoBitrate == -1);
 		m_dvd->SetVideoBitrate(videoBitrate > 0 ? videoBitrate : 4500);
@@ -980,9 +982,9 @@ void MainWin::OnNew(wxCommandEvent& event) {
 	if (dlg.ShowModal() == wxID_OK) {
 		TemplateDlg templateDlg(this, dlg.GetAspectRatio());
 		wxString templateFile = templateDlg.ShowModal() == wxID_OK ? templateDlg.GetTemplate() : wxT("");
-		NewDVD(templateFile, templateDlg.GetTitle(), dlg.GetLabel(), dlg.GetCapacity(), dlg.GetVideoBitrate(),
-				dlg.GetAudioBitrate(), dlg.GetVideoFormat(), dlg.GetAudioFormat(), dlg.GetAspectRatio(),
-				dlg.GetDefPostCommand(), templateDlg.IsChapterMenu());
+		NewDVD(templateFile, templateDlg.GetTitle(), dlg.GetLabel(), dlg.GetDvdResolution(), dlg.GetCapacity(),
+				dlg.GetVideoBitrate(), dlg.GetAudioBitrate(), dlg.GetVideoFormat(), dlg.GetAudioFormat(),
+				dlg.GetAspectRatio(), dlg.GetDefPostCommand(), templateDlg.IsChapterMenu());
 	}
 }
 

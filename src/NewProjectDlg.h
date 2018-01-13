@@ -24,6 +24,7 @@ public:
 	virtual ~NewProjectDlg() {}
 	
 	wxString GetLabel();
+	DvdResolution GetDvdResolution();
 	DiscCapacity GetCapacity();
 	int GetVideoBitrate();
 	int GetAudioBitrate();
@@ -38,6 +39,10 @@ protected:
 	virtual void CreateDVDPropPanel(wxSizer* sizer, DVD* dvd);
 	virtual bool SetValues();
 	virtual bool Validate();
+	
+	void UpdateResolutionIcon(int sel);
+	void OnChangeResolution(wxCommandEvent& evt);
+	DECLARE_EVENT_TABLE()
 };
 
 #endif // NEW_PROJECT_DLG_H

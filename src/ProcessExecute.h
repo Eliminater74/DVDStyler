@@ -111,7 +111,7 @@ public:
 	virtual void ProcessOutput(wxString line) {
 		if (line.Find(wxT("buffer underflow")) >= 0
 				|| line.Find(wxT("packet too large, ignoring buffer limits")) >= 0
-				|| line.Find(wxT("Last message repeated 1 times")) >= 0
+				|| line.Find(wxT("Last message repeated")) >= 0 // Last message repeated X times
 				|| line.Find(wxT("Past duration")) >= 0
 				|| line.Find(wxT("configuration:")) >= 0)
 			return;

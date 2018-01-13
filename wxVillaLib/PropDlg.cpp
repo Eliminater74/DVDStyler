@@ -17,10 +17,18 @@
 #include <wx/grid.h>
 #include <wx/spinctrl.h>
 #include <wx/statline.h>
+#include <wx/statbmp.h>
 #include <wx/bmpcbox.h>
 #include <wx/tglbtn.h>
+#include <wx/tooltip.h>
+#include <wx/richtooltip.h>
+#include <wx/wx.h>
 #if !wxCHECK_VERSION(2,9,0)
 #define wxBitmapToggleButton wxToggleBitmapButton
+#endif
+#ifdef __WXMSW__
+#include <setupapi.h>
+#include "wx/msw/private.h"  
 #endif
 
 #include "rc/delete.png.h"
@@ -854,6 +862,58 @@ void wxPropDlg::AddBitmapToggleButton(wxSizer* sizer, bool value, const long id,
 	m_types.Add(propTOGGLE_BUTTON);
 	m_controls.Add(ctrl);
 	m_groupIds.Add(m_currGroupId);
+}
+
+int wxPropDlg::AddIcon(wxSizer* sizer, const wxString& title, const wxString& tooltip, wxArtID artId) {
+	if (!sizer)
+		return -1;
+	m_tooltipTitle.Add(title);
+	m_tooltipText.Add(tooltip);
+	m_tooltipIcon.Add(artId == wxART_WARNING ? wxICON_WARNING : wxICON_INFORMATION);
+	wxStaticBitmap* icon = new wxStaticBitmap(propWindow, wxID_ANY, wxArtProvider::GetBitmap(artId, wxART_BUTTON));
+	icon->SetName(wxString::Format(_T("%d"), m_tooltipTitle.GetCount() - 1));
+	sizer->Add(icon, 0, wxALIGN_CENTER_VERTICAL);
+	m_icons.Add(icon);
+	icon->Connect(wxEVT_ENTER_WINDOW, wxMouseEventHandler(wxPropDlg::OnShowTooltip), NULL, this);
+	return m_tooltipTitle.GetCount() - 1;
+}
+
+void wxPropDlg::UpdateIcon(int index, const wxString& title, const wxString& tooltip, wxArtID artId) {
+	if (title.length())
+		m_tooltipTitle[index] = title;
+	if (tooltip.length())
+		m_tooltipText[index] = tooltip;
+	m_tooltipIcon[index] = artId == wxART_WARNING ? wxICON_WARNING : wxICON_INFORMATION;
+	((wxStaticBitmap*) m_icons[index])->SetBitmap(wxArtProvider::GetBitmap(artId, wxART_BUTTON));
+}
+
+void wxPropDlg::OnShowTooltip(wxMouseEvent& event) {
+	long idx;
+	if (!((wxWindow*)event.GetEventObject())->GetName().ToLong(&idx))
+		return;
+#ifdef __WXMSW__2
+	HWND hwndToolTips = CreateWindowExW(WS_EX_TOPMOST,
+			TOOLTIPS_CLASSW,0,WS_POPUP | TTS_NOPREFIX | TTS_ALWAYSTIP | TTS_BALLOON,
+			CW_USEDEFAULT, CW_USEDEFAULT,CW_USEDEFAULT,CW_USEDEFAULT, 0,0,wxGetInstance(),0);
+	if (hwndToolTips) {
+		TOOLINFOW ti = {};
+		ti.cbSize = sizeof(TOOLINFOW);
+		ti.uFlags = TTF_ABSOLUTE | TTF_IDISHWND;
+		ti.hwnd   = hwndToolTips;
+		ti.hinst  = NULL;
+		ti.uId    = (UINT)hwndToolTips;
+		ti.lpszText = (LPWSTR) m_tooltipText[idx].wc_str();
+		SendMessageW(hwndToolTips, TTM_ADDTOOLW, 0, (LPARAM)&ti);
+		SendMessageW(hwndToolTips, TTM_TRACKACTIVATE, (WPARAM)TRUE, (LPARAM)&ti);
+		SendMessageW(hwndToolTips, TTM_TRACKPOSITION, 0, (LPARAM)MAKELONG(event.GetX(), event.GetY()));
+	}
+#else
+	wxRichToolTip* tip = new wxRichToolTip(m_tooltipTitle[idx], m_tooltipText[idx]);
+	tip->SetIcon(m_tooltipIcon[idx]);
+	tip->SetTipKind(wxTipKind_Bottom);
+	tip->SetTimeout(3000, 0);
+	tip->ShowFor((wxWindow*) event.GetEventObject());
+#endif
 }
 
 ////////////////////////////// Group /////////////////////////////////////////

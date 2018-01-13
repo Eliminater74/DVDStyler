@@ -24,6 +24,7 @@
 
 DVD::DVD() {
 	m_label = wxT("DVD");
+	m_dvdResolution = dvdSD;
 	m_capacity = dcDVD5;
 	m_videoBitrateAuto = true;
 	m_videoBitrate = 4500;
@@ -549,6 +550,8 @@ bool DVD::PutXML(const wxSvgXmlDocument& xml, wxProgressDialog* progressDlg) {
 		m_outputDir = val;
 	if (root->GetPropVal(wxT("isoFile"), &val))
 		m_isoFile = val;
+	if (root->GetPropVal(wxT("resolution"), &val) && val.ToLong(&lval))
+		m_dvdResolution = DvdResolution(lval);
 	if (root->GetPropVal(wxT("capacity"), &val) && val.ToLong(&lval))
 		m_capacity = DiscCapacity(lval + 3);
 	if (root->GetPropVal(wxT("jumppad"), &val) && val.ToLong(&lval))
@@ -626,6 +629,8 @@ wxSvgXmlDocument* DVD::GetXml() {
 	if (m_isoFile.length() > 0)
 		root->AddProperty(wxT("isoFile"), m_isoFile);
 	root->AddProperty(wxT("name"), m_label);
+	if (m_dvdResolution != dvdSD)
+		root->AddProperty(wxT("resolution"), wxString::Format(wxT("%d"), m_dvdResolution));
 	if (m_capacity != dcDVD5)
 		root->AddProperty(wxT("capacity"), wxString::Format(wxT("%d"), m_capacity - 3));
 	if (m_defPostCommand != cmdCALL_LAST_MENU)
@@ -906,12 +911,20 @@ bool DVD::IsRegisterUsed(int g) {
 	return false;
 }
 
-wxArrayString DVD::GetVideoFormatLabels(bool copy, bool none, bool menu) {
+wxArrayString DVD::GetVideoFormatLabels(bool copy, bool none, bool menu, bool hd) {
 	wxArrayString formats;
 	if (none)
 		formats.Add(_("Omit"));
 	if (copy)
 		formats.Add(_("Copy"));
+	if (hd) {
+		formats.Add(wxT("PAL Half HD 1280x720"));
+		formats.Add(wxT("NTSC Half HD 1280x720"));
+		formats.Add(wxT("PAL HDV 1440x1080"));
+		formats.Add(wxT("NTSC HDV 1440x1080"));
+		formats.Add(wxT("PAL Full HD 1920x1080"));
+		formats.Add(wxT("NTSC Full HD 1920x1080"));
+	}
 	formats.Add(wxT("PAL 720x576"));
 	formats.Add(wxT("NTSC 720x480"));
 	if (!menu) {
@@ -954,6 +967,15 @@ wxArrayString DVD::GetAspectRatioLabels(bool autom) {
 	formats.Add(wxT("4:3"));
 	formats.Add(wxT("16:9"));
 	return formats;
+}
+
+wxArrayString DVD::GetDvdResolutionLabels() {
+	wxArrayString labels;
+	labels.Add(_("SD (standard)"));
+	labels.Add(_("Half HD (1280 x 720)"));
+	labels.Add(_("HDV (1440 x 1080)"));
+	labels.Add(_("Full HD (1920 x 1080)"));
+	return labels;
 }
 
 wxArrayString DVD::GetCapacityLabels() {

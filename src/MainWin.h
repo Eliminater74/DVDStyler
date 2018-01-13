@@ -68,7 +68,8 @@ public:
     /** Destructor */
 	~MainWin();
 	/** Creates new project */
-	void NewDVD(wxString templateFile, wxString discTitle, wxString discLabel, DiscCapacity capacity, int videoBitrate,
+	void NewDVD(wxString templateFile, wxString discTitle, wxString discLabel,
+			DvdResolution dvdResolution, DiscCapacity capacity, int videoBitrate,
 			int audioBitrate, VideoFormat videoFormat, AudioFormat audioFormat, AspectRatio aspectRatio,
 			DefaultPostCommand defPostCommand = cmdCALL_LAST_MENU, bool chapterMenu = false);
     /** Loads a project file */
