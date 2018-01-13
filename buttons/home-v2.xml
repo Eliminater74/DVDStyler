@@ -9,7 +9,7 @@
 				<feGaussianBlur stdDeviation="3" />
 			</filter>
 		</defs>
-		<use id="shadow" xlink:href="#home" x="2" y="2" style="visibility:hidden;fill:#404040;filter:url(#shadowFilter)" />
+		<use id="shadow" xlink:href="#home" x="2" y="2" style="fill:#404040;filter:url(#shadowFilter)" />
 		<g id="main" style="fill:#006680">
 			<g id="home" transform="matrix(0.368667,0,0,0.368667,-39.728,-113.974)">
 				<path d="m 374.93731,485.15661 l 0,0 z m 0,0 l -95.44898,-84.53005 l -95.50394,84.56669 l 0,120.84098 c 0,3.12083 2.52183,5.62434 5.64267,5.62434 l 59.68767,0 0,-52.98243 c 0,-3.12085 2.50351,-5.64266 5.62434,-5.64266 l 49.04356,0 c 3.12081,0 5.62434,2.52183 5.62434,5.64266 l 0,52.98243 59.70599,0 c 3.12083,0 5.62436,-2.5035 5.62435,-5.62434 l 0,-120.87762 z m -190.95292,0.0366 0,0 z" />
