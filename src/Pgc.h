@@ -45,6 +45,8 @@ public:
     unsigned int GetChapterCount(int lastVobi = -1);
 	/** Returns URI of video frame */
 	wxString GetVideoFrameUri(int chapter, long position = -1, bool fileNameOnly = false);
+	/** Returns true if "call last menu;" is used in cell commands */
+	bool IsCellsUseCallLastMenu();
 	
 	wxSvgXmlNode* GetXML(DVDFileType type, DVD* dvd, PgcArray& pgcs, bool vmgm = false, int nextTitle = -1,
 			int nextTitleset = -1);

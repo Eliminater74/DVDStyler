@@ -107,6 +107,17 @@ wxString Pgc::GetVideoFrameUri(int chapter, long position, bool fileNameOnly) {
 	return uri;
 }
 
+bool Pgc::IsCellsUseCallLastMenu() {
+	for (unsigned int vobi = 0; vobi < m_vobs.size(); vobi++) {
+		Vob* vob = GetVobs()[vobi];
+		for (vector<Cell*>::iterator it = vob->GetCells().begin(); it != vob->GetCells().end(); it++) {
+			if ((*it)->GetCommands().Find(wxT("call last menu")) >= 0)
+				return true;
+		}
+	}
+	return false;
+}
+
 wxSvgXmlNode* Pgc::GetXML(DVDFileType type, DVD* dvd, PgcArray& pgcs, bool vmgm, int nextTitle, int nextTitleset) {
 	wxSvgXmlNode* node = new wxSvgXmlNode(wxSVGXML_ELEMENT_NODE, wxT("pgc"));
 	if (m_entries.size() > 0)
@@ -192,6 +203,13 @@ wxSvgXmlNode* Pgc::GetXML(DVDFileType type, DVD* dvd, PgcArray& pgcs, bool vmgm,
 		} else {
 			ReplaceCallLastMenu(preCommands, dvd);
 			ReplaceJumpNextTitle(preCommands, dvd, nextTitle);
+			// check if "call last menu;" is used in chapter commands
+			if (IsCellsUseCallLastMenu()) {
+				int reg = dvd->GetLastMenuRegister();
+				if (reg > 0) {
+					preCommands = wxString::Format(wxT("g%d|=0x8000;"), reg) + preCommands;
+				}
+			}
 		}
 	}
 	if (preCommands.length())
