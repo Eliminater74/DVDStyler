@@ -193,7 +193,7 @@ void TitlePropDlg::CreateSlideshowGroup(wxSizer* sizer) {
 	formats = DVD::GetAspectRatioLabels();
 	int ar = slideshow->GetAspectRatio() >= 1 ? slideshow->GetAspectRatio() - 1 : 0;
 	AddChoiceProp(formatSizer, wxT(""), formats[ar], formats, GetCharWidth()*8);
-	AddSpinProp(grid, _("Duration:"), slideshow->GetDuration(), 1, 1000, GetCharWidth()*8, _("sec"));
+	AddSpinProp(grid, _("Duration:"), slideshow->GetDuration(), 1, 9999, GetCharWidth()*8, _("sec"));
 	
 	// transitions
 	wxArrayString labels;
