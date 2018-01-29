@@ -1,3 +1,8 @@
+Version 3.1 beta 2 <2018-01-24>
+-------------------------------
+
+  * fixed functionality of command "call last menu;" if specified for a chapter
+
 Version 3.1 beta 1 <2018-01-14>
 -------------------------------
 
